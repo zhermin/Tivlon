@@ -1,0 +1,2616 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.19.0123.2221                               -->
+<workbook original-version='18.1' source-build='2018.3.3 (20183.19.0123.2221)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='warehouse_ports' inline='true' name='federated.19emuit0lnmy8917mip3n1stj691' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='warehouse_ports' name='excel-direct.0a6sl9w0ect67910qbvke1qxfuky'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ZM/Desktop/warehouse_ports.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0a6sl9w0ect67910qbvke1qxfuky' name='warehouse_ports' table='[warehouse_ports$]' type='table'>
+          <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='port' ordinal='0' />
+            <column datatype='string' name='product' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='integer' name='price' ordinal='4' />
+            <column datatype='real' name='percentage' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>port</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[port]</local-name>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias>port</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product]</local-name>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias>product</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage]</local-name>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[warehouse_ports]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1%' datatype='real' name='[Calculation_838795487326437376]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[price]/[percentage]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+      <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+      <column-instance column='[name]' derivation='Attribute' name='[attr:name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[diff:sum:Calculation_838795487326437376:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[diff:sum:Calculation_838795487326437376:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+          <order field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' />
+          <order field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' />
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[diff:sum:Calculation_838795487326437376:qk:3]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[diff:sum:Calculation_838795487326437376:qk:4]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[diff:sum:Calculation_838795487326437376:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+          <order field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' />
+          <order field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' />
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:3]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:8]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>&quot;62\%巴粗（SSFG）品牌价格：曹妃甸港（日）&quot;</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[sum:Calculation_838795487326437376:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.500699' measure-ordering='alphabetic' measure-percentage='0.499301' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:name:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;58\%墨西哥粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;64\%墨西哥筛后块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;59\%伊朗磁粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;58\%罗布河块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:name:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;58\%墨西哥粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;64\%墨西哥筛后块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;59\%伊朗磁粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;58\%罗布河块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:name:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：北仑港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;65\%南非粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;60\%高硅巴粗品牌价格：北仑港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;60\%高硅巴粗品牌价格：北仑港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#59a14f'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#79706e'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8cd17d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8cd17d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8cd17d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8cd17d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8cd17d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#8cd17d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9c755f'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;60\%RTX粉品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;60\%RTX粉品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;60\%RTX粉品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;65\%南非粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b6992d'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#bab0ac'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：北仑港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;56.5\%超特粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;64\%南非块品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;64\%南非块品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;64\%南非块品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#edc948'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#edc948'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#edc948'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#edc948'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：岚山港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：曹妃甸港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9d9a'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9d9a'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:2]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9d9a'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:3]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9d9a'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9d9a'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9d9a'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9da7'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9da7'>
+              <multibucket>
+                <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9da7'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：北仑港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ff9da7'>
+              <multibucket>
+                <bucket>&quot;62\%巴粗（SSFG）品牌价格：北仑港（日）&quot;</bucket>
+                <bucket>&quot;[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Differential'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='warehouse_ports' name='federated.19emuit0lnmy8917mip3n1stj691' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19emuit0lnmy8917mip3n1stj691'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:1]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:2]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' />
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' />
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:8]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[port]' derivation='None' name='[none:port:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]' included-values='all' />
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]' included-values='all' />
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;56.5\%超特粉品牌价格：北仑港（日）&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;62\%巴粗（SSFG）品牌价格：北仑港（日）&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;65\%南非粉品牌价格：太仓港（日）&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Beilun&quot;' />
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Caofeidian&quot;' />
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Taicang&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;56.5\%超特粉&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;58\%印度粉矿&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;60\%RTX粉&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;62\%巴粗（SSFG）&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;65\%南非粉&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-12 00:00:00#</min>
+            <max>#2019-04-01 00:00:00#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-23 00:00:00#</min>
+            <max>#2019-01-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' field-type='quantitative' max='#2019-09-05 01:55:32.969#' min='#2017-10-02 10:37:23.635#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]' field-type='quantitative' max='154' min='-278' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' />
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='auto' />
+                <format attr='size' value='0.82359117269515991' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:1]</rows>
+        <cols>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Normalized'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='warehouse_ports' name='federated.19emuit0lnmy8917mip3n1stj691' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19emuit0lnmy8917mip3n1stj691'>
+            <column caption='1%' datatype='real' name='[Calculation_838795487326437376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[price]/[percentage]' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:2]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' />
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' />
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:8]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[port]' derivation='None' name='[none:port:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+            <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[sum:Calculation_838795487326437376:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]' included-values='all' />
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]' included-values='all' />
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;58\%印度粉矿品牌价格：天津港（日）&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Rizhao&quot;' />
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Tianjin&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;48\%印尼粗粉&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;58\%印度粉矿&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;61.5\%PB粉&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-12 00:00:00#</min>
+            <max>#2019-04-01 00:00:00#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-23 00:00:00#</min>
+            <max>#2019-01-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' field-type='quantitative' max='#2019-05-26 11:12:51.736#' min='#2017-12-17 07:11:25.508#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]' field-type='quantitative' max='11.397742128935532' min='1.0067406296851567' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]' field-type='quantitative' max='664' min='61' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' />
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' />
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' />
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk] + [federated.19emuit0lnmy8917mip3n1stj691].[sum:Calculation_838795487326437376:qk])</rows>
+        <cols>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Normalized Diff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='warehouse_ports' name='federated.19emuit0lnmy8917mip3n1stj691' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19emuit0lnmy8917mip3n1stj691'>
+            <column caption='1%' datatype='real' name='[Calculation_838795487326437376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[price]/[percentage]' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_838795487326437376]' derivation='Sum' name='[diff:sum:Calculation_838795487326437376:qk:4]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:2]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' />
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' />
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:8]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[port]' derivation='None' name='[none:port:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+            <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]' included-values='all' />
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]' included-values='all' />
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;58\%印度粉矿品牌价格：天津港（日）&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Rizhao&quot;' />
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Tianjin&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;48\%印尼粗粉&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;58\%印度粉矿&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;61.5\%PB粉&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-12 00:00:00#</min>
+            <max>#2019-04-01 00:00:00#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-23 00:00:00#</min>
+            <max>#2019-01-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' field-type='quantitative' max='#2019-07-27 21:38:33.440#' min='#2017-08-23 19:00:02.781#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]' field-type='quantitative' max='3.9057090453912005' min='-0.58227270074953497' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' />
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:Calculation_838795487326437376:qk:4]</rows>
+        <cols>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Price'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='warehouse_ports' name='federated.19emuit0lnmy8917mip3n1stj691' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19emuit0lnmy8917mip3n1stj691'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:2]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Field' type='Difference'>
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' />
+                <order field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' />
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[price]' derivation='Sum' name='[diff:sum:price:qk:8]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Fixed' ordering-field='[federated.19emuit0lnmy8917mip3n1stj691].[name]' ordering-type='Field' type='Difference'>
+                <address>
+                  <value>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[port]' derivation='None' name='[none:port:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]' included-values='all' />
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]' included-values='all' />
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;58\%印度粉矿品牌价格：天津港（日）&quot;' />
+              <groupfilter function='member' level='[none:name:nk]' member='&quot;61.5\%PB粉品牌价格：日照港（日）&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Rizhao&quot;' />
+              <groupfilter function='member' level='[none:port:nk]' member='&quot;Tianjin&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;58\%印度粉矿&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;61.5\%PB粉&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-12 00:00:00#</min>
+            <max>#2019-04-01 00:00:00#</max>
+          </filter>
+          <filter class='quantitative' column='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' included-values='in-range-or-null'>
+            <min>#2017-07-23 00:00:00#</min>
+            <max>#2019-01-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:2]</column>
+            <column>[federated.19emuit0lnmy8917mip3n1stj691].[diff:sum:price:qk:8]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]' field-type='quantitative' max='777' min='144' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]' field-type='quantitative' max='#2019-05-13 06:03:37.011#' min='#2017-12-15 20:10:11.997#' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' />
+              <color column='[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='true' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19emuit0lnmy8917mip3n1stj691].[sum:price:qk]</rows>
+        <cols>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='130'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='5' param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]&#10;[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{4EB6358A-5E7D-44BC-9D08-2D2550CDF84C}' />
+    </window>
+    <window class='worksheet' name='Differential'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='252'>
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='6' param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]&#10;[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{F3B4F56D-8768-44D4-8F8D-24F6746E152D}' />
+    </window>
+    <window class='worksheet' name='Normalized'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='230'>
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='8' param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]&#10;[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{692EB9B1-9C6E-4AB2-8C26-49A18C415015}' />
+    </window>
+    <window class='worksheet' name='Normalized Diff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='230'>
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tyr:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]' type='filter' values='relevant' />
+            <card param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='9' param='[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]&#10;[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[:Measure Names]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:name:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:port:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[none:product:nk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[tdy:date:qk]</field>
+            <field>[federated.19emuit0lnmy8917mip3n1stj691].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{F83A951D-DEBB-4889-A000-5467F187D3D9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Differential' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Normalized' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nO3daXAc533n8W93zwlgcN/3RYAgQPEUSVHUxZUlS3GUyHFsuRI7XpecTdZO
+      nNW6dpPs1sZZ1252U86xSax1LMd2nPUdJ7YlS5Z1WCIlUaKIkyBA4r7PGWAwGMzR17MvAIKC
+      KJAgiEua51PFKmJmuucPVP+6n36ep7sVIYRAkhKUut0FSNJ2clz+TyQSQdf1TfkSwzBwOp2b
+      sm5JuhnKVjSBgsEg6enpm/01knTDZBNISmgyAFJCkwGQEpoMgJTQZACkhLbuABixMB0dnUTi
+      JkYsTOfFbgzLxrZ0ui52shA3N7JOSdoU6wuAsGhtu8iuXVUoCFpazlNWkkNLWycdrS3klZbT
+      1tyMHGKWdjrH9T/yDmKzTAYXuHC+DV92KYrLRVJyOqrVR1xVSUvy4nFqmEKg2ja2bWOa8ogg
+      7TzrC4ArmZzMDG7Zt4umlh4QAsvSQdVwYKNbFpYQOBQFRdNQVRWHY31fJUmbad0jwdNjg4z5
+      5yirqkEszDA4Nk35rt247QW6+obILSynIGdx9FeOBEs7lZwKISU02Q0qJTQZACmhyQBICU0G
+      QEpoMgBSQpMBkBKaDICU0GQApIS27gDMzUwzPDxMOBrHMuKMjU9i2QJhm0yMjxE37Y2sU5I2
+      xToDIOju7SclJQWHptHW0owi4rR1dNPV3oaBSktzq5wNKu1465yhJnBgM9jfR0FFLZbmpKCw
+      lLGxJsKqTW1BPv6xMSwhUORsUGkHW18AbEHDoSNodoTG8yMgAGGDoqCiYAmBjUCTs0GlHW59
+      W6WwuNR5EcOwqKyuw5gbp6m5mZKq3XitedpaWsjKL0HZ4GIlaaPJ2aBSQpPdoFJCkwGQEpoM
+      gJTQZACkhHbNAERjMd5obEM+Q0N6r1q1G3RwZIzGlg5Ovd6IoiocObB3K+uSpC2x6hFgLhTm
+      F6+e5dcfuk9u/NJ71qrjAB2XetEcGtkZ6WRl3lwfvhwHkHaqmxgIE+i6jsPpAmETi+l4vR5A
+      EIvGcHm8aOriWLAMgLRTXXMqxPRIDy+8cYGqwhz23HobyY4rkxssPcrPnn6G4//mA4x3t+Lw
+      JmGpySTZ80QVF5Gowa2y6STtcNcMwD9963scvP0OejrP4Sjay4FS39I7gu5LXVTvqgYgjsbe
+      ugYaG5uIKzYHD+6lpbEZU84GlXa4awbgyN4aXnzpFKozhQ/kpyy/rof9DIzP4LAXiDsyUASw
+      1JJSURACBAJVUVDlbFBphxFCoCiLrZlrngO8fvoU+4+foKfpNQobbiPTq614f3y4D29WCfPj
+      fUzPhcktriLJCjEw4SclPY+aiiJAngNIO4MQgvPjLfyg5TtUZlVxtOz2ax8BXn/tFGX1+znf
+      +Bpq8UEyvUkr3i8oqQQgvaqWkuVX08ksKN2E8iVp7aJGlDMDr+APTy2/1uPvIhwP81tHHmUi
+      NM6LXc9e+wjgH+3hmedOk1lax4Mnj617fr88AkhbqdffzTfOfoWanDrKMiuWX8/35VOdU4uq
+      XBn+eucjgBHhuTOtEBwkEteJ9J5ndP8+ijO9m168JN2MwIKfr575Eo/e9mkqs6qX2/qrueYR
+      4PSpUxy/4060m7y0Sx4BpK0QM6J8v/lbZKfk8uCeh9a0zDXPAWb62/ja8DQNlUXU7TtEepJz
+      QwqVpI1kWAaNw2d56sKPKEgt5IP7PrLmZVcNgG0Z5FXsJsedRnKSB4cqr/CVdh7btvle8/9j
+      MjTOJ458iqrsXddt9rzVqgF45rtfI+DMZrC3hc997jG8TnnpgLQzdEy00x/oJRid5dJUB0mu
+      ZB67+49wOVw3vK5VA9A9McPJ++9gtKuNtvYOGvbsJtktB7Oka3vrKeVa9sRCCAQCwzJoGTmH
+      pi5uY8HoLK2jTVTn1KCpV8afLNviVO8vuLf2/ZRnVnLf7gdJ92bg1K5ungsjijXyJoo3EzWv
+      /h3rWfUkuLezjZGp2csf45bDx8hIvvGEgTwJfq8xLINwfB6A0bkRRoKD1Offgm7pvNTzAhOh
+      UVRFozKrmruqT5LmScfrWhxDiptxTvW+yECgj5rc3YzNjXB+vBXTNqnJ2Y1jaUN2aS4OFB1i
+      ODjI27fQuvx6SjPKV61PxOYwOn6C0fkkakYZYsEPmgvn7l9CzaxASckDQHF41jsbVBCYHCcY
+      MSkrKwEjyuDoFGXlZWjCZHBwiLzicryuxeTulAAIIXim80nODp4h1ZPKA3W/TF1+w3aX9a4y
+      FZ7k8Vf+GiEWp7qkeTMoTS/jwkQbboeHu6pOUpZZiS0szg6eoXWsiYge4XDJERRF5dzwG+zK
+      qeVwyVEah8+S68vn7up7cagaHufNd7MLYRN76jHUrCqce34VNb0EYVtYo+cwB17FDvQgYqHF
+      D+sL6w2AydRUEI8SpWfKxA5PUF1TTe+QH69YILd8Fz1d3Rw9chiFnREAIQTPd/2MxuGzfPLo
+      7zAdnuTJC/+KEIK7qk9yvOLOLa0lakR5feAVuqcvcbj0GFXZ1fRMXyJiRHGqDiqzq0n3Zi4v
+      EzUivNp3ivbxFoozyihJL8Pj8HCo5FZsIbCFjQI4NCeqoqJbOk7ViWmb2OLKjYoVlBtqK7/W
+      f5q2sablnwdnBnho769xtPQ4KIvrUxRl6fuVq5oZtrAJRmZpHWvCFjb7Cg+QlZyNomzOOaU1
+      0Ub81F/g/dDXUFTtqveFEIt3MQSwrfXeG9SBgzgt7d1U33IrY4MzpGfkQO8wURWy09MY1tQN
+      vTfoXDTIfDxEYVoxtm0BoKkOFEWhx3+J0/0vYVjGqstbtslEaJzH7voj0rzpZHqzqLm7joFA
+      H19943GKU0spTCteV22WbTEcHKQ8s3L5NSEElr3ydzZsk9G5YV4deJnu6UvUZtdxsOhWnmr/
+      FyxhUZxWSorLh27FefbiTzHfsrwtbOrzbuHhho8wOT/O6OwII3ND/Lj9n4HFDXHxb6KR5kln
+      Yn6cFLePuBlbfu/yevJ8+Ti1tYWgP9DLRw98fLlt/lD9h8hNycO2137371R3GndU3HPl72XZ
+      wAbePVzYWD3Pg+bEPPv3OE7+CZYtwL7eNqeu7wgghEAIMPUQ5ztHEVaEQ4cO0NR0Hk0xqd9/
+      iLbmJg4eOrSuI4BY2qNd9tylZ3ip53kieoRdOTX0BXoAcDs8ZCVnMxcN8lDDB0lxp666TkVR
+      KM0oI9mVctV7P7/4NIEFPx899PE11zcxP8ZcdA6AxuGznO59kfKsKvJ8BRSnl9A9fYnu6Ysr
+      lnOoDgrTijlUfITDpcfwOr0oioJpGSiKuuJkzxY2cTO+/LOmqLgc7hXrs2yLyfkJUj2pSxuo
+      IGbEmI3MkOL2YdoGqZ605Y13cRmT0bkRrKWdyPXk+fLJSs5e02e3g73gx2j5NtZoI2pmJYov
+      H/fRf7fm5dcVANuI0tHZjY2gsKwaJTLD4Lif8l11eOwwXf3DZOeXUZy/eAi/kQCYtsnjp/+K
+      4eDQ8n4rx5fH793xOVrHmpgOT/Fg3S+jqhrB6CyBBT+lGeXv2AuwVsHoLH/yzB9StnRipSgK
+      9fm3cFf1SdwOz8rf3bb50fkfcG74jeUjRnZyDr/S8GuMhUaZjcwwOjdCni+PW0tvW7FRSxtD
+      CIE91YHR/i9Y462o6SW4T/wH1PQbn4S54+4N2h/o5fst3+Kzd/4nLjcnHapzUzckIQTjoTHi
+      ZgxYDOHp3l9wYeI8Cgofu/WT1Obu4W9PfZGJ+TFKM8r57eOfwetMus6apc1gzfQRe+Y/4zry
+      KbT8W1B9+ete147r2PcvTFOQWoTH6bn+hzeIoigUphWteK06uwbD0hkODvG1179MXX4Dye5k
+      /uddf4lTc62YUZjohL6AMGMoLh8iHkLRnCietBtfjxmDpfM4Ycaxhs9iBwcRS12ul9mTF3Ad
+      +gTOXffddO07LgCBBT9ZSVnbXQaKouByuKnK3sUDex4isDDN/bt/6aomUaITQhB77r9h+7vB
+      lQwoYERxn/gD0JwII3pV08QOdGONtwGgZlUj5sexZ/qxg0OwvGMRaMWHUbOqUbOqVizvKLsd
+      rfTohtS/7QG4fMIrlh6oNBWepDa3bpurWulE5V3b9t1CX8A4/wPEUq+L4nDjqDqJ4suH2Nzi
+      BuP23dD8l5uuSQgQFvZ4G8alp7HnRkl65NuAAGcStr8b/exXUJxJoDkw5idWLK/6CtDKbgPA
+      Gm1GzSzHVXkPSmohivtyJ4WKom3+5rnt5wBRI8qfPfcnhGKLPSoOzcnn7vkv5KcWbHZZ7wp6
+      2/exBl9FK1nc4wk9gtn1MxRXCiI2BwjUvAbUzPLlZRRXCs6GD6KssavzRln+bqL/+juoGRU4
+      9z+CVrAfdQf3FF3LtgdAurbYC19AK7sNZ/W9y68JM44IjaEk54CiYg6+gogElt+3hl5HSS1C
+      K9yPiM5hXvopYqnb01FyFPfxz6z5+4VtYvWfxpq8AA43jtLb0M/9A1rxEVz7P7pxv+g2kQHY
+      wYQZJ/rDR/Hc/z9uqIvPjsxgNH0TYekomgtH3QdQXMkAxF/+c7AtcKWAGcOeHUTNKIO3n9tY
+      cexAL8LSUTMrcZTdjojOYk114Ki4a/EI8x7o4pUB2KGEGSf65B+gJmfjue8LG7deS8eaaAfb
+      XOytSS/Fnum/Mj3gMs2JllkJzuQtaYtvFxmAHUQIGxGeIv7q32DP9KJmVeN5339/T+xpd6p1
+      R1uPRQgtxMjIyADbIDgXJiMzA0XYzM4G8aVn4NRkX/n1CEsHS8fyd6O/8RXEgh9H7ftxn/gs
+      ijdDbvybbH1HAGHQ3TWA1wOBsIaITpORnU0wIkiy51F9mQT8QY4c2gfII8Bq7NA4sWf/GBGf
+      R/Gk49z/yGIXpxxk2zLrOwIoTqp3VdJ1oZXU7HIC47OUlVfhP9dESLU5WFZKyB/YsfcGFUb0
+      ykxBzY2yjkvpbohtId7axg4OYLX/AHOsFcfhR9Eq717c0yvqxs+UlK5pnU0gQWvjWfKrGsjP
+      9BEY61/xpHhbgL2B9wYVQiDCE9hzo2j5t4ClL27AqobiXrxhr700mnjddcWC6G/8PWiLMysV
+      hwvXicfQCvdv+J7XXphGzE8SP/N3iGjwyhuWjuvwv8V9x2Mo7zA7Vdo669sqrSjzUQttdADb
+      LKYoO42m5maKymvw2vO0trSQkVO05ifwiXgYe2m00A4Oop/50uJGfvl920LxpqO4khH6AhhR
+      UB1gm6gZFSgpOVjDZ1HzGt4ylL46z4NfXOz6A6yRc0uBcKCmrpwPpCTn4jr4m6C+ZaapoqIo
+      yvIe/XJohFg5/9yabCf+/J+ipBbirLkfR+WV+fCojreMeErbadt7gUQ8TOQHn0BJygYFUJ24
+      b/v0ipFNFA1Fcy5e2jbWjJZXj+L0IiwDa7QJYSygppeiZVWvqz4hBNbwGwgjsuJ1s/cX2JMd
+      cLkbUNg4ax8EVcPofg4sA61gH46KOxan5k51wNIkbiUpE889f4yWV7+umqStsf0BMOPY/i7U
+      vIYtnc+yFsK2EPHQlRcsHf3Ml1BS8nHueQgUDXPoDNbga2hFB3Hue0SewL7LbHsAJGk7yd2V
+      lNBkAKSEJgMgJTQZACmhyQBICU0GQEpo6w6AEGL57mBCCEzTWrphlsA0Tbagd1WSbtq6J+j0
+      d19gLGBw4rYDdLS8iak6cSRlkWzPMRsXWLbG4f1yFFTa2dYdgMqaOqLnuwCICo3D+w7Q2NhE
+      TLE5ePCQfFK89K6wIde6KSjLT4pX3vqkeEBRVVRVRdPkhR3SzrPOAJh0d1xkYnIKX1YW2T4P
+      Tc2N5BRVkmTN0dzSTHJaDupb5vbstHk+kgRyLpCU4GQ3qJTQZACkhLZ8DhCJRNB1/VqfXbeF
+      hYVNWa8k3Sx5DiAlNNkEkhKaDICU0GQApIQmAyAlNBkAKaHJAEgJTQZASmgbEgAhbAKBGQQg
+      LIO+nm4i+tqeRC5J22lDAjAxPEjHpV4E0NHWQlpuPm3NzchrwqSdbkOuBygorWBmbvG+mjGh
+      kJXqY8ihYgqBKi+IkXawDX/4kwYYlo2NwKEoKBtwe3RJ2iwb0gQa6usiFA7R3TdETVUFF863
+      kl9cibwERtrp5GQ4KaHJblApockASAlNBkBKaDIAUkKTAZASmgyAlNBkAKSEJgMgJTQZACmh
+      yQBICW3DAyBsi/lQCMO0N3rVkrThNjwAF9tbmfIHONfcstGrlqQNt+FzlD1uJ7NzQRxO9/Jj
+      lOT1ANJOtcEBEMyGotTvP0hbYxOWouCQ1wNIO9iGN4FystLo7LiAOzUD+UwYaaeT1wNICU12
+      g0oJTQZASmjXDEA0Fudc6wX50GvpPWvVrpmRsUma2jr4xStnATi8Tz70WnrvWfUIEJgN8txL
+      Z3j4l+7lwN66raxJkrbMqr1A7Rd7UBSFvOxMsrMybupLZC+QtFPJblDpPUkIwah/nmfP9pKd
+      5uW+W6vwup1Xfe6aAbCMKK+89BIRvJw8eRdubX23upIBkLbS7HyUH77cyYWBaR48touR6RDN
+      3eOcPFBBSaqLnO52XLuqSa6qXD0A5xvP4PS4ae+bJQs/hUcfojbXu66CZACkrWILwf/+1qvs
+      Ks7kvqp03HoUgIlAmFNPnWYobDJbXImiKERi+uq9QPX7D3P21dO47Hly62+nJmd9G78kbaXZ
+      +SjDA2N8YrqJhZ+OEi/IByAJ+OW9JSTfeQdaTi4Atm2vHoA3X3uZ6bkowuVleqADf24OOanu
+      LfklJOlG2bZAVRW++UwLdw23kPKrd5Lye/8e5RqTMFVVWz0AqcnJDE/NkZdfxonDe9dcSHwh
+      yMXuQXyZuVSWFtzYbyFJ6xCO6nz+6y/hdTuZ6e7n48dqSbn/PhT1+hMdVg1A3cHbqDu4+P/m
+      00/jqbqDukLfdVd4qauHnIIS0tJvrutUktaieyTAV59qZn9+MvUD57GNEVLf9ztr2vjhGgF4
+      8p/+jtaxOMkuleHeDj7y2G1rWuH8fIjcAmhtbOLW40flAzKkTdE7OsO/nL7EqH+eQ/Ysx061
+      kHP3Cbyf+k0Ur2fN29uqATh+5z3khVM4Ul/GuV/8GK97bbP787MziQsFh6aiKAqavCBG2mCT
+      00H+7juv8IlbsikRQay2NnL+6x+iZWWiKDfWVb/hA2FC2EyNj5OSkUOy1wXIblBpbcyZWRRN
+      BUXBDoeZu9RDeNce4m+9v4IQPPutp8kVce5NjuHZtxfPnnocebnr+k45EiytmxACYRicahng
+      4niIktxU+kZnSXHAw945kmpqcJaVrmiPCyEw/AGiI2M4igphYpxwYzP+mEVL5wh+hxdQiKIy
+      ll1MVk46LrHyDiO+zDQ+/sABUpNvvlcy4QIQ7+4mfvESqs+H99BBNN/1T+ylK4SuM/ejHxO/
+      eAmEIBac43+56jgRGkB3eajdW8U5dx7TTW2oQmBX76Iiw4sjOwsAOxzmUmMHc9mFCMNA9U8h
+      UtPJyM9mf3UeRTmpALgcGvUVOe84fWEjJVQA4r29BL70OL73vQ9zaopoSyvJJ24n+e67cWRl
+      bnk95tQU8d4+PLtr0TIysONxhGEsPljQuzjwODkT5hs/a8Fe2gl63Q7u2lvMLQU++uYMHE6N
+      ioLN63EzRsfQB/qXf46ea0RNTSVy7E5e7xzhVLefyspCPn13NapDQ01PxzBtWnsnSPK48Dg1
+      hgYniHV0gGnhrq8npyiHhopchGnSOxGiMNu33Fzeau+aAAjLAstCcV39h7IXFoh1diKisdWX
+      Nwzmn/05mb/9KK7KysXlQiHCz7/AwqnT5H3hT9FSU9dXmxBgGO9Y21W1xuPEWttYeOklzJlZ
+      3LtriZ1vR8vIwPL7UdwuhGWhaA6cRYW8GE1ibGaBo7EJtLQ0xIk7eWo4Sqh/CM22EXqcwvoa
+      ijUDFAVHVhZJviQO95zDk5mGNTOLPT+//P2K04l71y4U9xqaD0IQ+smTeA7sh6WTS2dRIeMV
+      9Xzx+2c4WlfMr91dhy/JjXqDJ587xbsiAHpfP8HvfhdhmCTfcTux8+0AaNnZOPPzmX/uOdxV
+      VagpKauvRFHw7N+HZ/fuq+v7znfR0tPxPfD+ddUXOddI8FvfxvfgAziys3AUFKD39hFtamJ5
+      1w0Iw8QMBHDk5uB74P24KytRXC6M8QlA4MjNRdE0hBBY09NYs7N8/Y1h6gvTOFKZhausDEXT
+      sG3BzHyU5GiY2LlzdOVXEzCvbICNHcPUm0Ea3Drh1ExeujSFaS3W0VCUxvEkHSxrTb+bq6qS
+      uao6+seDODSVhopcvvlsK8U5qXzgeM26/l47yY4LgBCC8M9/Trzz0vJr+vAQGb/1cSJvnMWc
+      nCTtQx9CUVWMsTHM6WmSjh7BWVJyw11gl8V7+5h54okrAVBU3JUVOIqKrlqnEAK9u4eZrzyB
+      HV2caKUmJ5P+0Y8Q7+rGmpnB9PtxZGWRfOedK44KisuFIzcHxetdU61CCL7wj6f42P37qChY
+      +w5kZCrEEz9twrJsNFXhvlur8CW5sYXgG8+08Cu315KZ6iWmm3QO+qktzSbJvbKbOm5YtPdN
+      MR/V6R+fpTw/nfnI4v/3Vefz6AcOkOzZnmbLRtpxATAmJwn8zd+S8fGPwVLvgSM7By1j884h
+      hBCEn38Ba3Z28QXbJtZ2HmdpCVpaGikn70HLzib83HOYU9PEzreT/dnfx1lctKk1NXdP8I1n
+      WvjLz9yPQ9uY+xeM+ef50SsXMU0bh0OluiiT7pEZLGtlT4tDU6mvyCE9xUN1cSbJHhdCCKJx
+      kyTP5p6YbqUdF4BoSyuRs2fJ+u1PbXJV12bH48QvdBDv6cEcHyfp9uOEfvQTfA8+gHt3LY7M
+      zTtpNkyLQCjKn379Jf7jI8epLtr6E/REseOGZ82AH0d29naXgep24z14AE9DPYH/+2Xmf/Ys
+      6Y98GE9Dw6Z9p2FadA0H+NrTLZiWzQPHdsmNf5PtuABYU9M4Cgu3u4xlistF9md/f1O/QwjB
+      0OQc//TzNmxb8PCduzmxt3RTv1NatO0BsCMRAl/+CiK2eEJpTkyS9Xuf2eaqtkY0bvClf32T
+      iZkwliX49Xv2cKy++F3bpfhutCnnAGY8SsxSSEnyANc/BzCnphGGvviDpuHMz9/oknYUy7YZ
+      GA/y3RcvUJ6fzoPHqknxunA65O2Et9omHAEEnZ2tRM1kjqzxQhpHbs7Gl7EK2xa82NzPXDgO
+      QFG2jyN1Rajq5u11h6bm8Acjyz+f7RxlYCLIw3fUcXh3Adoa565LG2/DAxAY6yc1rwxjzL+u
+      B2QIIZiP6NhvOTCZls3FoQA9o7M8cLSK+UicuGGhqSoVBWm4nQ7OXRqntXeS6x3OZudjmKbF
+      vqpchIB/fukCXSMBfvX2mg3t3hNC0Ng1wfBUiFOtg1QXXZmukJ7i4b9+7AQelwNh25i2fJzU
+      dtnYJpCwef2Vl/GmpdI/MM0DD96H26Fetwk0E4oyFVwAoH9slidf61oxN0RTFUpy08hO8/J8
+      Yz8FWSlk+rxEYgbTwQgpSS5CC3EeOVmPtob+8luq8vC4FrMfWojz7Ju9vNI2dNXswsKsFD75
+      4AHcruvvJy6Pzl52acjPT890c2RPEbfWFi5P8pJ2lk05BxBCZ6B/gorKxZ6MawUgppv88RMv
+      kJ+RgqKAQ9P46L0N5KYnv6VKUBUFIQQzoSjpPg+aqmILgT8YwbRsUryudU+PvbzeuLFyesCz
+      b/Zy5sLwchNFCMHDd+xefs+yBLfVF3O8oYTvvNDO1OzC8oCVL8nFpz5wkLzMa0zPkLbdtg+E
+      xQ2LnpEAe8pz1j2VYbMIIVY87TISN/iL752hOCeVD965G01VebV9iFMtg+zfVcBvvG/tNw+Q
+      doZtD4AkbSfZ/SAlNBkAKaHJAEgJTQZASmgyAFJCkwGQEpoMgJTQZACkhCYDICU0GQApoW34
+      dOixoV78swuEoga3HzvEzprdI0krbXgACkuryMiYoblzcMX1ANYab8QkSVtpwwMwOzlE1+gc
+      Rw7tQwEUVUVd+idJO82GB6CvbwB3cgbdvYPU1lQsn2TstKnOkgRyOrSU4GS7REpoMgBSQpMB
+      kBKaDICU0GQApIS23AsUiUTQdX3LC7Bt+6bGCNa7/M1873Ytm6jfvZl1b0k36LVYloWmvbvu
+      iWlZFqqqvuvGNt6Nf2vY3Lq3PQCStJ3kOYCU0LY0ANNjg0SNa39mLjBBW0fXyheFYHpsiIs9
+      AwCMDvbQ2trCRGD+6hXcFIs33zjH9abthWenaT7feVWNM5OjXOjqBWBiuJ/W1hZGp4IbXOM7
+      s60YIyMTK17ru9TF5bO6mclRLlzqXbmQEEwM99M9MALAUO8lWlta8M9F2HyC0YFuWlqaGRoP
+      rHhnaGjwyqdsi+72JiaDK2uyTZ32pteZi4EwY7S1tNDafhHLvrEGzZYGIDQzTdyIc+F8G81t
+      F9CNeV5/5Sznzp4jcvkWhA4vqoi/bUmBKyUDKz4PmIxPhmjYU8vIwMCG1jc/MYTq0hjzLzA7
+      0kdjWztNbR1EQtM0N7UwMDYNgKW6cCpXJ1nzpCCMCGAxMhGgoaGescG+Da1xNcI28AeCDAwO
+      gq3T0zuEoV+pUfOkIMy3bdjCwpueg74wC+hMBqI01FUy2D+06fVa+gKTQYt9+/YzM9JHLBam
+      ubmZ7t4+2pqb6LjYiwXYRpy09DQWois7aPR4nKw0DwsGBIa68RXVkK7pTIffvu1c25Y3gYQt
+      UFSVwPQEC9Eo6VnF1BR68YcXA5CWlnb1NQSKSlqqb2kFKk5Fp6X1PMlpGzu/qHdoHK/byfBA
+      H/HIAmW1DWRqgmAkjO1Op6ww50qNbz8BVpQrtQsVj8OmpaUVj2/znuL+TubDYRA2wbmVR8d3
+      /LuqDtJ8SzfvFRqqHaG5rZPUjM2v2dLDODw+FEUhyaFyqXeAqrq97KqqpKCohD27q9AAzZ1E
+      ivfq29Z7kn24lx4okpyZy0hXGyOBMD73jd3ifosCYLOwECYYNjBmhlF8eaQmL80Kc6gAAAQy
+      SURBVD49ZnHOtMLlG/vH4zF0XSeuG8xMT6BbizepjcWi6LqOHo8QNjVqa3YRnJnesAqFraO4
+      UykvryRJNTBtQWQhzGw0hlfTyMzIWN6A9Ms1xnUCUxPo9mKN8cs16jFCUZva2hrmgxtX42ri
+      sSiByXHcvgwswyA4GyAaN676jK7r6IaBf2oC0wYh7OW/qxELExUeamuqmPFPbnrNDm8W0eAI
+      86E5AnFBYXoSk1N+QqF5NEUQjkQRgG2ZxGI68XgMy9SZnFpsLlmmQVxffH1qfJLCymoKMtwE
+      3nKL+rXYol4gwfjwIJ60XDJ8HkaGhvCmZpDm86LrApdmYWpePA6F0cE+IrqFNyWd+dlpavfs
+      QbEthgb60C1Izcgh1QNjU7MUl5bhdmxMhm3LIKpbJHs9ixv+UC9Tqo/KogJS3CqGreFZepj0
+      +MgA4aiBOymV8FyAuj17QAiGB3qIm5CclkVWipOR8WmKSsvwODe363EhNIM/FKe0uIBIaIaZ
+      +Thpqak4VPAkJ6MCQ/3di7X50pibnWV3XS3CNBgcHMC0IT07jyTNZCIwT2lpCc4Nei7xtcSj
+      YUbGpiguLcftVJgaH0XxpJKR5GBkYpbSsiLMSIjB0cVA+pJc6FoqpfkZLMwFGJuaAUWjtKyM
+      2ckRbFcKBTlZ3EjvtOwGXUUkGEDxZeF993WbSzdABkBKaHIcQEpoMgBSQpMBkNZtcmyI3r5+
+      YvrangC6SHDh3GlefrMdy4jR19vDyNgUb2+IxxZCLMSuPWo6NDJ+40W/jfb5z3/+8ze9Fikh
+      ffn//DkLkSg//tnLHDt6mJ6OFvxhE80IE8NFLDiFrrjxOFSGejuZmNNxGTP81ePfZO/BI6QR
+      4Etf/SHTI5foCZhUF6bS2NhMUnoOZ37ydV7umKSysoLxvk5Chka6L2n5uyem/Dz+9e9RmJdD
+      Ttb6xy3kEUBaN29mPh9+5De4vTyJ7slpOtq7+eaXH8cfmuap58/w3DNPg8NJoL+J7/z0NV74
+      4TfoGJvH6U0hI3XxKaB1B47z6O/+Lv6eTkYG+xgY6Oar3/wBgsWxlbHOMzx5qpVv/8NXWVia
+      LNDZ1cef/fUTZGdm4HLd3LOdZQCkm2JbOr3jc2izQ0Q9GRSme0kqqicy2sq8kkaaSyEU8FO9
+      /xiH95Shaz6KS8upqyxeXsfc1AiG08OF8xeo2r0bxdIpKSmhes8+iAQRDid1NZXEl1pamqZy
+      /8nbuefErVSVl9xU/TIA0rrlp2h88S//lt0nHqCipBR/fzve3BK8Dic1eUlUHTgOQNmBu4h3
+      v0yz38Ox3QXUVFcC4PSmMXrxVf7xhy/y4Q8/TGVpPmdeb6W6uoKy+sNcePGHuCqOkBafZDgQ
+      wbM0JlNVXsKD997JLXtqb/p3kOMA0oabn+rnie+8wKc/80ncWzCifDNkAKSE9v8Bdyqq9l37
+      mjUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Normalized Diff' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Price' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

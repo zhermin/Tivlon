@@ -1,0 +1,1913 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.19.0123.2221                               -->
+<workbook original-version='18.1' source-build='2018.3.3 (20183.19.0123.2221)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='unpivoted (warehouse_ports_new)' inline='true' name='federated.0qw62160mijh9q1cy8d3x1t83uss' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='warehouse_ports_new' name='excel-direct.1n6k9v00g871zh15jud0w161sto5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ZM/Desktop/warehouse_ports_new.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1n6k9v00g871zh15jud0w161sto5' name='unpivoted' table='[unpivoted$]' type='table'>
+          <columns gridOrigin='A1:E10001:no:A1:E10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='port' ordinal='0' />
+            <column datatype='string' name='product' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='integer' name='price' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>port</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[port]</local-name>
+            <parent-name>[unpivoted]</parent-name>
+            <remote-alias>port</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product]</local-name>
+            <parent-name>[unpivoted]</parent-name>
+            <remote-alias>product</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[unpivoted]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RSG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[unpivoted]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[unpivoted]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[unpivoted]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E10001:no:A1:E10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+      <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.544056' measure-ordering='alphabetic' measure-percentage='0.455944' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:product:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;60\%印度粉矿&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;62.5\%巴混（BRBF）&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;63\%乌克兰/俄罗斯球团矿&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;62.5\%纽曼粉&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61\%罗伊山粉&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62\%印度粉矿&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62\%墨西哥粗粉&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;63\%印度粉矿&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;61\%麦克粉&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61.5\%PB粉&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;61\%金布巴粉&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;52\%印度粉矿品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;56.5\%超特粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;57\%杨迪粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;57\%罗布河粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;58.5\%混合粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;60\%RTX粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;60\%高硅巴西巴粗品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;61.5\%PB粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;61\%麦克粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;62.5\%PB块品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;63\%巴西块矿品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;63\%纽曼块品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;64\%南非块矿品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;48\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;55\%印尼海砂品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;56\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;58.5\%混合粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;58\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;60\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;61.5\%PB粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;61.5\%PB粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;61\%印度粉矿品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;61\%金布巴粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;61\%麦克粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;62\%印度粉矿品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;62\%罗伊山块品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;63\%印度粉矿品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;63\%纽曼块品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;50\%马来粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;56.5\%超特粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;57\%杨迪粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;57\%罗布河粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;58.5\%混合粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;60\%高硅巴粗品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;61.5\%PB粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;61\%印度粉矿品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;61\%金布巴粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;61\%金布巴粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;62.5\%PB块品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;63\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;63\%纽曼块品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;64\%南非块品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;58\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;63\%乌克兰/俄罗斯球团矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;52\%马来粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;56.5\%超特粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;57\%杨迪粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;57\%杨迪粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;59\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;60\%伊朗磁粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;60\%高硅巴西粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;61\%金布巴粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;61\%麦克粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;62.5\%PB块品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;62\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;63\%巴西块矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;63\%纽曼块品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;65\%乌克兰/俄罗斯造球精粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;52\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;56.5\%超特粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;57\%杨迪粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;59\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;60\%RTX粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;60\%高硅巴西巴粗品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;61.5\%PB粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;61\%麦克粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;62.5\%PB块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;63\%巴西块矿品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;63\%纽曼块品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;64\%南非粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;52\%伊朗磁铁矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;56.5\%超特粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;57\%杨迪粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;57\%罗布河粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;58.5\%混合粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;60\%高硅巴粗品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;61.5\%PB粉品牌价格：大连港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;61\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;61\%金布巴粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;62.5\%PB块品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;63\%印度粉矿品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;63\%纽曼块品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;64\%南非块品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;61\%伊朗赤粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;54\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;56.5\%超特粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;58.5\%混合粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;58.5\%混合粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;58\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;60\%印度粉矿品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;61.5\%PB粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;61\%印度粉矿品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;61\%金布巴粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;61\%麦克粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;62.5\%PB块品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;62\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;62\%罗伊山块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;63\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;63\%巴西块矿品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;48\%马来粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;55\%墨西哥磁粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;57\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;57\%杨迪粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;58.5\%混合粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;58\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;60\%印度粉矿品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;61\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;61\%金布巴粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;61\%麦克粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;62\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;62\%罗伊山块品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;63\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;63\%纽曼块品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;64.5\%南非块品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;54\%印度粉矿品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;56.5\%超特粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;58.5\%混合粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;60\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61.5\%PB粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61.5\%PB粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61.5\%托克粉（SSFS）品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61\%金布巴粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;61\%麦克粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;62.5\%PB块品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;62\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;62\%罗伊山块品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;63\%南非粗粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;63\%巴西块矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;65\%南非粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;52\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;56.5\%超特粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;57\%杨迪粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;57\%罗布河粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;58.5\%混合粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;59\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;60\%高硅巴粗品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;61.5\%PB粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;61\%麦克粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;62.5\%PB块品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;63\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;63\%纽曼块品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;64\%南非块品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;54\%伊朗磁铁矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;56.5\%超特粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;57\%杨迪粉品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;59\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;60\%伊朗赤粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;60\%高硅巴西粗粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;61\%伊朗磁粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;61\%金布巴粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;61\%麦克粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62.5\%PB块品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62\%印度粉矿品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;63\%纽曼块品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;65\%南非粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;54\%印度块矿品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;56.5\%超特粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;57\%杨迪粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;57\%杨迪粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;59\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;60\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;60\%高硅巴西粗粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;61\%金布巴粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;61\%金布巴粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;61\%麦克粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;62.5\%PB块品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;62\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;62\%罗伊山块品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;63\%巴西块矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;65\%南非粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;黄骅港现货价格：63\%巴混（BRBF）（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;54\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;56.5\%超特粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;58.5\%混合粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;58.5\%混合粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;60\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;61.5\%PB粉品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;61.5\%PB粉品牌价格：防城港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;61\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;61\%金布巴粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;61\%麦克粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;62.5\%PB块品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;62\%印度粉矿品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;62\%罗伊山块品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;63\%印度粉矿品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;63\%巴西块矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;65\%南非粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;54\%马来粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;56\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;57\%罗布河粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;58.5\%混合粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;58\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;60\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;61.5\%PB粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;61\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;61\%金布巴粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;61\%麦克粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;62.5\%PB块品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;62\%印度粉矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;62\%罗伊山块品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;63\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;63\%巴西块矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;52\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;56.5\%超特粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;58\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;58\%墨西哥粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;58\%罗布河块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;59\%伊朗磁粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;59\%伊朗赤粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;59\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;60\%RTX粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;60\%高硅巴西巴粗品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;61.5\%PB粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;61.5\%托克粉（SSFS）品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;61\%麦克粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62.5\%PB块品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62\%墨西哥粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;63\%巴西块矿品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;63\%纽曼块品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;64\%墨西哥筛后块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;57\%杨迪粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;52\%印度块矿品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;56.5\%超特粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;57\%杨迪粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;57\%罗布河粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;58.5\%混合粉品牌价格：鲅鱼圈港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;60\%RTX粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;60\%高硅巴西巴粗品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;61.5\%PB粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;61\%麦克粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;62.5\%PB块品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;63\%巴西块矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;63\%纽曼块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;64\%南非块矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;50\%伊朗磁铁矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;55\%海南块矿品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;57\%印度粉矿品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;58.5\%混合粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;60\%印度粉矿品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61.5\%PB粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61.5\%PB粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;61\%金布巴粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;62.5\%PB块品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;62\%罗伊山块品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;63\%印度粉矿品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;63\%纽曼块品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;64\%南非块品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;54\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;56.5\%超特粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;58.5\%混合粉品牌价格：南通港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;58\%印度粉矿品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;60\%印度粉矿品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;61.5\%慧安科技粉（HABF）品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;61\%金布巴粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;61\%麦克粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;62.5\%PB块品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;62\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;62\%罗伊山块品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;63\%巴西块矿品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;63\%巴西块矿品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;63\%纽曼筛后块品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;65\%南非粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;52\%墨西哥磁粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;56.5\%超特粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;57\%杨迪粉品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;57\%阿特拉斯粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;59\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;60\%RTX粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;60\%高硅巴西粗粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;61.5\%PB粉品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;61\%巴粗（SFNG）品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;61\%麦克粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;62.5\%PB块品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：湛江港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：曹妃甸港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;63.5\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;63\%巴西块矿品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;63\%纽曼块品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;65\%乌克兰/俄罗斯球团矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：镇江港（日）&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;61\%印度粉矿品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;50\%印尼粗粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;56.5\%超特粉品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;57\%普利粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;57\%杨迪粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;58.5\%混合粉品牌价格：罗泾港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;60\%墨西哥筛后块品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;61.5\%PB粉品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;61\%印度粉矿品牌价格：江阴港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;61\%罗伊山粉品牌价格：岚桥港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;61\%金布巴粉品牌价格：青岛港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;62.5\%PB块品牌价格：北仑港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;62.5\%巴混（BRBF）品牌价格：大连港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;62.5\%纽曼粉品牌价格：日照港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;62\%巴粗（SSFG）品牌价格：京唐港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;62\%巴粗（SSFT）品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;62\%罗伊山块品牌价格：黄骅港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;63\%印度粉矿品牌价格：连云港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;63\%纽曼块品牌价格：天津港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;64\%南非块品牌价格：太仓港（日）&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;65\%卡拉加斯粉品牌价格：岚山港（日）&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted (warehouse_ports_new)' name='federated.0qw62160mijh9q1cy8d3x1t83uss' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qw62160mijh9q1cy8d3x1t83uss'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[port]' derivation='None' name='[none:port:nk]' pivot='key' type='nominal' />
+            <column-instance column='[product]' derivation='None' name='[none:product:nk]' pivot='key' type='nominal' />
+            <column caption='Port' datatype='string' name='[port]' role='dimension' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Product' datatype='string' name='[product]' role='dimension' type='nominal' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:port:nk]'>
+            <groupfilter function='level-members' level='[none:port:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:product:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;57\%杨迪粉&quot;' />
+              <groupfilter function='member' level='[none:product:nk]' member='&quot;58\%印度粉矿&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[tdy:date:qk]' included-values='all' />
+          <filter class='quantitative' column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[tmn:date:qk]' included-values='in-range-or-null'>
+            <min>#2019-01-05 00:00:00#</min>
+            <max>#2019-04-01 00:00:00#</max>
+          </filter>
+          <filter class='categorical' column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[yr:date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:date:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:date:ok]' member='2019' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:port:nk]</column>
+            <column>[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:product:nk]</column>
+            <column>[federated.0qw62160mijh9q1cy8d3x1t83uss].[yr:date:ok]</column>
+            <column>[federated.0qw62160mijh9q1cy8d3x1t83uss].[tdy:date:qk]</column>
+            <column>[federated.0qw62160mijh9q1cy8d3x1t83uss].[tmn:date:qk]</column>
+            <column>[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qw62160mijh9q1cy8d3x1t83uss].[tdy:date:qk]' field-type='quantitative' max='#2019-04-26 03:12:25.853#' min='#2019-01-26 10:49:24.705#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0qw62160mijh9q1cy8d3x1t83uss].[sum:price:qk]' field-type='quantitative' max='681' min='430' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qw62160mijh9q1cy8d3x1t83uss].[sum:price:qk]</rows>
+        <cols>[federated.0qw62160mijh9q1cy8d3x1t83uss].[tdy:date:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='122'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.0qw62160mijh9q1cy8d3x1t83uss].[yr:date:ok]' type='filter' values='relevant' />
+            <card param='[federated.0qw62160mijh9q1cy8d3x1t83uss].[tmn:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+            <card param='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:port:nk]' type='filter' values='relevant' />
+            <card param='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:product:nk]' type='filter' values='relevant' />
+            <card param='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:name:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='0' param='[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:name:nk]</field>
+            <field>[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:port:nk]</field>
+            <field>[federated.0qw62160mijh9q1cy8d3x1t83uss].[none:product:nk]</field>
+            <field>[federated.0qw62160mijh9q1cy8d3x1t83uss].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E2268536-83DD-4B5D-A35D-961A978F2B70}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nOy9d3hc13Xo+zvTO4AZlBn0ThSCIABWURRJiZIoWbJsy1axbFl25CTXcW5e
+      bhInzveS3JvcvJtmx3HNjbstW71YlVSlGnsBQDSit0EdYAbT2zn7/TEQKIpVECWS4vy+T5/A
+      M6fsObPW3mvvtfZakhBCkCbNFYrqYjcgTZqLiebDvPk7g4uiKKhUaV1Lc+nxoSoApIRfURTS
+      llaaS5FlK0As5KW7b5TMHCe5FjW9Q24MlkyqS510dnYh6a3Ur6hErVYDLP0/TZpLiWXbJV3d
+      /RSXFOHKdTA8MEJF/UqC3hnGhvvILq7BJoWZCcYvZFvTpLngLFsBAgE/oWCQQ4ePkmW30tV6
+      lJiiJp5IYNRrMRkNhCNpBUhzabNsBXBkZWAw29BIMO3xUllVjS4ZwZKRhXtikolZLzmZpgvZ
+      1jRpLjjScv0AQpEZHx0lK68Ak05ifHQMqyOPLJsJz9QEkjEDR4YFAFmW03OANJcky1aA90Na
+      AdJcqqQX59Nc0aQVIM0VTVoB0lzRpBUgzRXNshUgEQ3S1dVNOJZEScbp7e7CG4igyHF6e7oJ
+      xZIXsp1p0nwoLE8BhExbew9V1RVICDrb2ykor0Kvga62VvKKS2k/eoR09E+aS53lxQJFfUz7
+      QnS2t2PJLmLGMw09HQh9BglUZJiMGLQakkKgUhRkWU4Hw6W5JFmeAuhM5NizWNVYxZHWfmxZ
+      OdQ1NHLk8BF0aoglFWQh0EgSUjoYLs0lzLIdYbMTo0x4fJSUV6NO+BkcnSSvoJQMvULf4AjZ
+      +aXk52QCaUdYmkuXtCc4zRVNehk0zRVNWgHSXNGkFSDNFU1aAdJc0aQVIM0VTVoB0lzRpBUg
+      zRVNWgHSXNEsOy/QSH83vnCCotIq7FYDnYfewFjcRIY8z/D0PCZrNrWVxReyrWnSXHCWpwDJ
+      EGOTPuzZdiwmPX7POEmVnlg8yciMh6bmFlqPHEERRUikUiSmg+HSXIosUwFiJNQmKkvzaG3r
+      IBb0UuK0MhUMopYkJElCQkIBpMXUiGnSXIosTwEMmWRqehkYGsVss1HiyiY4P0ZSJMk16znW
+      2Yms1qORJPgYRYNOhcd52f0sSSUBgFFj4lOlX0Cv1l/klqVZLssOhlMUmUQiiU6nQ5IkhKIg
+      kJAkiMfjaLU6VCoJ+HgEw3ljHp4eeZjrHdeT3T2O8Pl4vmyO9aU7yDcXXezmpVkmy54Eq1Rq
+      9PoTQi2pVEiLf+v1H68eMZQI8MLYk1ytbsD22jFec7sZ1uiIEabCOZ1WgMuYDz09+uVOQomz
+      c+xJ6kQRol/wcuUmtLUqCgFfNIYvOnyxm5jmA5BWgLMgK0leHH8aZ9JKQZ/EnvxqbqjLwaRL
+      jXx7h/3MRNIT/MuZtCPsDAgheGvqZTThGE2dgv32StZXOpaEHyDLpGEhchEbmeYDk1aA0yCE
+      4IhnH/MLbrZ0adiXUUFVhYs8i/ak87LNWpIJK8FE4CK1NM0HJa0A70EIQe9CJ70zR7i+x8w+
+      VQ6mijKqc4xIknTSuTa9Ch1ZzEVnL1Jr03xQ0grwHtzhUQ64X+HGXiuHAioi1atYU2Q9RfgB
+      dBo1ZrUeXzRtB12upCfB72I+OstLw4/zicFsOqaizKy7jpsrstAs+jOScpL2iaNEEimBN+vM
+      2LROvOH0RPhyZdkjQDIWZqB/gGg8SSIaor9/gHAsiZATDA8OEInLF7KdHzqBhJ/nhh9m26CV
+      gRE/wyu3srkqB8uir0MRCo+0/oZXencx6h1m1DvMLw/+hHB0An/0Ijc+zbJZ3gggZNraO1lR
+      V4uiKMxOz+Jy5dLW2kaGXpBTWknb0aOsX7+GUw2HS4+YHOX54Ydp7lXwjoQZWX09LVUFuGw6
+      IDUv2D+yh8G5fr5x7d+g06SOJ5UE/sgokqaOuBxDlw6JuOxYdmrEKW8Y9fEeMvJKKC0qor+7
+      A4fTRWBugpzMTMY1qssiNWJSSfCi+ynKev3IwyqGV16Ny+WiyqEjmUwl+B31DvP0scf575v/
+      AhWqpeMlmWW0Dh3FoqojGAtj013e4R5XIstMjWgk1+GgcXUVh48eJzI7TGZhNS5HBm1zEyQU
+      gcKlnxpREQp7pl/FNDCGvk/NWF0zOmc5G0oz0GlS1qE/usDPDvwnX1z7FVyZ+SddX5pdzqt9
+      L5GZUAgkYthNWRfja6T5ACxvDqA2UZRjoq29m7KqKhKywtzkKENjk1RXlNLZ3kpuQeklbf4I
+      ITg4+xbB/naKujWMV9SSLFjJ5vIM9IvCn5AT/HTfj9hatZ06Z8Mp93DZ8vHHfOhJ4I2k08Ff
+      jix7FchZXI5zccOXo2X9SZ+tXp39gRr1UdDlbWWk/21Wdug4nlOApnI9zS4LNkPqlQgheOrY
+      o5i0Jq6tumHp2IJ3fml/g1arJceSRyQ6wUIk56J9lzTL54pcBh0K9HF0YBdrjulpN2aQ27wd
+      u1VPYYZu6Zyj44fomGzjm9v/FypJhRCC/u4OfHNzGM1mAPw+L1bZjDcyTGa4HiFEKjRcCJQP
+      OOWRJFCdxveQ5sJyxSnAdGSCN/ufouWYjkMJLTU33EZAVtPgNC85u9y+MR488kv+4tq/waA1
+      IIRgZKCPoN9P81Wbl+Yz855Zut/oZl6ewrcQQxGCeFLQORViOhD/QAVCVJLExlIbWcYr7if6
+      SLmi3u5C3MuLQ4/R0CGx1xPn6js/T19I4voq25LwR+Jh/nPP97i7+UvkWvMQQjDlHmd2apLG
+      tRtQqVQIkTKBshwOyrMr6XB34wqG6ZoJMDiXoMxu4LqqzNN6j8/OCZXxhJK8NbTA9VVZGLRp
+      h/2HxRWjANFkhOeGHmLFsTj7R8Jsv+c+OgMarim3LQmYosj8/MB/saZoPc1FawGYm5lmpP84
+      q9dvQpUYITT8yJKcSioNKys/zZMTMlHvCEemFGRdG4FgjBm5gC35O9CqTgTQCSGQZZlkIk4s
+      GiUcDBIJhwiHgkQjEZKJBO/ojEqlpqCglr0jfrZUZKTNoQ+JK0IBkkqC50cfo6ArwJFOP9fe
+      cy8DcQsNLiNZppSACiHY2fMcSTnBJ+pvA2DBO09v5zFWr9uIFg+Rsd9iLL4XSZea8Ca8e7HE
+      W3Fmupg59CafuubrOHLuwO/z8ubQizwXe5SViVUIWRAJh4iEwyiyjFqrRafXYzJb0JsMaI16
+      IlKUmEigLGpXMhDHOtaBOr+RtokQTQWWi/PyPuZ87AtkKELmpfFnUHX30feGl6tv/ywReyUa
+      tURzgWXJTDk20cajrb/lL7f/LWadmXAwSNvBfdStbsZqFoQHv4+h4E401pqlews5Qqj3//CM
+      P5e2N4+THc1Bq9MRj0ZxZDtw3pjPvH+Grdk7sJhtaI164kSZjk7iiU4zHZnAn1jApDHjNBWQ
+      pXOgllLv6dj8YcoilejCBmYyqonLguUOAkJAUZae1flpJXovH+sRQAjB3undRPu6WTiUpOG6
+      7RgLa5j1xdhaccJGnwlM88Chn/HH1/wZZp2ZWDRC+6H9VNWtxGrVEh74D/TOW9EYSmD0bVjM
+      CiFpjGgz11Pg281AoZkmyyqKyipwFZXw1u7XCB8M49iYx77EG0gLEuG5EFpJS54pn1xjPiWW
+      StRCw0LYx0xwmsHZIcTiCBCUI8TzEpjiZiqlGQqqq5f9HhQheKnXR12uacnBdyXjjy7Q5j5K
+      RXblx1cBhBAcmz/MxNBh6NCQVVPNijWb2Dca5PrqTNSLEZ6RRIQfvf0ffHb13RRmFpOIx2k/
+      uJ/iikoc2RmEh/4TnX0TWmsDdD0KhiwwL675e3rQ2cso0EZJmHRs3LYdk9lCUkmyZttGnn/6
+      SeKH9BSvKyEYDWJI2vCG5jky2spMYCf+oB91UkVeZj5leeU4s/JRSSkBPd7djsoouHvl/Rzb
+      vx+L1UquK38ZE+sUORYNM8EEhZlXZrySEAL3wjg7u5+hb/Y45dnVPN3xxPIVIOCbZWR8huLy
+      KlRxP0Pj05RVVqMTUfoGhskrLCc703whv8N5I4Rg0H+ctqFXyOnNZM6qZcdNt/LaYICNJTaM
+      2sUIT0Xm1wd/Sm1ePWuK1iMnk3QePUSOKx9XQQGRkZ+gMVegdVwDx38HRgdU3njiQRnFSF2P
+      kZt/PYGhh9AZ9PTNHufR1t8STUTRODREImFe+t1OtAkNZpWVPEseJbnlbMy7muKmUlwFBac1
+      DzO8Fl4bf5oH/D/jrqYvcuzAfkxmM9aMzGW9k6JMA8Pe6BWnAOF4mLaJI7xyfCdxOUmdcwvb
+      a24nEFPjyogtNxo0QW+/m9VNDSgCWjsGaFzdQHtHNzpiVK5czbHWVhzr1l6UcIipiJu3h56h
+      YDCbwUCYe75yL3vGQtTmmch517bG1/pfZiHi4751v48Qgp5jrZjMFkrKK4m6H0TSWNDl3Yw0
+      +DIgQfl1Jz/InAvmPMw4cOiN/Oee7zHtn+SO5i+w0rkKSZJIJhP0dHZiy8jE7nBgtlhO34vL
+      cUiEUwY7UF1ZxgtPCuZLjvFIx2+4umIL+w7tpqFlHXaLA53m/QlyrkXLobEACVlBq/74m0Gz
+      wRlePv4C7ROtFNsraSr6LIoowKTTUJVtxGXTMRVILFMBIgtMzS9wrO0IOqsTSaNBpzMhKUkS
+      KgmTToterb4o0aC+2Dy7hh+lbKqAY6Nu7vm9++mYjWPWqSjN0C5FcvbNHueV3l382Za/RhIS
+      vZ3tKIqgtHoFkcmnEYkFdIVfQRndiyo0i1zzGVAA5T0xP4WbUPc+xdaaO/BEg9y35qsYtEZk
+      +Z39EBI19fWgyCAnkANTEPIgxRaQYl5UsQWUoBc5EEBty0S1mFPJHPHjDGqRsnPRzx7kofnj
+      KBjYuXMXKoOGOudKrqu6EafthNl0NtRApkHN5EKUfJvunOdfrox4h/hdx2N4Qh5qcjewrep/
+      EEkayTHrqLDrsBk0qcUEoeCyqJebGtFGts1CfX017V2jkJSJRUOg1qEjSjAWJ64oH3k0aDAR
+      4MWxxyifz6ft2Ah33vslfIqB+UiE66oyl3q+uZCHXx36Cfdv/Bp2i4PRwX4ioRCr1qxH9r2N
+      iAxiKvtvSLM9MH8cVn0BjcZw+oda88CQxSZ7KWSvSCnI5FGY7QKxqARCATk1cUZrAlM2GDIR
+      9goCw0Fm3u4m6+pryVpXC4ttVE210tT/EC/Pq7iv4XY+HezBWP7H9HR0khRJZozz/PTAfwLi
+      JF/DmWguWket8wbG/XGK7aZzni+EIJwMIYtzB/mZNGY059GGD5ue6S5+vPdHbK64m1pnFZKk
+      psxhpCRLf8bJ//IUQKWjbkURxwfGqa1bATE/fQMj1NbXoBUx+vt7qaqp/0jNn4QSZ+fo4+SH
+      cji6d4BPfe5OtDYH7YMLXFd5QvhlRea/9n6fm+s+SbmjkqnxMabd4zRvvBol2E587i1M5f8d
+      yTcO4/ug4fNwJuGHVNBO0VUw+FJKuIdeBb0Vqm4C1eLrldSg1oJaD6pURyBH4ky/sJ/ohIeC
+      e2/FkGc/+b65K2modLFvfJIhlYXVphJi7odwVX+C1kP7KDdVsu3Gf8QbnkMWZ999Jysy39n9
+      L2wuv4Gj7jiKEOd0rE1F3OwcexKj5uzKIoSChMQnS+/GpLk4cz6Awbl+fvDm96jP/zIO8wpq
+      ck04zJpzfs/Lyg8Ql2MkReKU40IIdk/uRB9W0b9zlKu3XUtF3Upe7ffRUmjFaU0N+YpQ+PXB
+      n6FVa/h8y314pqfo7+6kacNVqBMjRN2PYCr7GqpYFHqegpV3pXrrRWLTXqZ3HUCJxAFQWwy4
+      PrUZjdkAHQ9D1Afl2yGrnDMt2gshCPW7mXpmD9b6MnKubUKlPUM/NHGY/W8/Rm9DEXeUf4lD
+      A9/luAKoTDinnNTkr6Ksuua8Voa+/+a32Va5nZlQMfVOE7mWM5tBQgieHH6AGtMqik3l57z3
+      QKSHbn8bnyq9B4PGeNpzZEUmFA++M8VBp9Fh1J7+3PeDEIIR7xDfeu1fqXV+iavLV54U13Uu
+      Lqtl0EOzbzMc7D/luBACl7aA4d0jNLa0UNewijcGFyi3G5dy+QgheHPgNSb9bv5s2zdZ8M7T
+      19XBqrXr0QgvkbHfYCy9H5UsQfeTUPuZk4Q/sRBk/MFXyL62aam39h7oZn5vJ7nbW1LnQ6qn
+      PwNKIsnsy4cJ9o2T/9ktGItyz/5D5TbQ6NzN0blJHk7+jILMem4LthNzrOaZ5EGSo0mEEDgL
+      CjFZTp+54h3WFm/g4Og+NldUMeaLnVUBZqKTDI0OMLxnBKPxXCOAQKPV0nDrKp4ZeYhbS+46
+      rRL87thjHBjdi06dem40GaUws5hNZdfQ4Gp835P6dwT/leO76JruZqXri2wofX/CD5fbCBCP
+      k0yeZgRA8PxTT2HLyOCGm2+hbSJEJKGwvsS6NAQOevr5v3u+xzeu+xsMip62g/uoX92M1awQ
+      HvguhpIvo1E7oOPBVC9urzzR/kiMkZ8+R9aGOrLWnPAEJwNhhn70O8r/5HbU+rP3qNGJOSaf
+      ehNjYQ55N21ApTvPvmd8P0c7XiQ5V0FQZ2Jstp3btiQIOm/muck91MZWYowaiUUjmEwWLBk2
+      MrIcWGwZ6A2Gpfcejof43y/+Dd/c/o+8NhDm5lr7UraL97b12dFHOPzkQT533b3U1tWftXkC
+      OLh3D62HD9PwqbVMhjLI1heecl7nZDul9nKM2pRCqSSZhWgPI/OHcPuGqc6pYUPpJqpyapb2
+      XJ+Jnukunmh/mFgyRp1zKxZ9IwWZVhpd70/44TIbAV7e+TyDfaeOACAoq6hk+46bGfXFmPDH
+      uWFF1pLwL0R8/GTfD/ny+j/AojZz9MDbrFi5CqtVS2ToB+jzP41G54SOh6Bgw0nCr8QTjD3w
+      ErbGCjJbVpz0VI3VhK2hHO/eLrK3rl46LkdihPrdKMmUbR6b9hLoHCLvlquwVBe+vx/JuZq6
+      obd46Pg4YjrOLffdi6VQQj36C3bkbWP3XDtWeyb5xmIypGx0MR2e6SmGentQZBmj2UJGVha5
+      rgLyrE7cC0PYTQWMeqOUO07tqWej0/QOdZMjnNTWr0SlOvcK04arN5MQKnr6LLiKZEbiL3Bd
+      /ifQq1P3f2twN9nmOOuK85auCSdkhuYbKLbXUudMEoz18NLxF3nwyK+ozK5mfclVVOXWoFGd
+      ENGEnODV3l3sGd5DS/HtaFWlaNQq6vJM5Nt0y3ISXlYjgHKWajNqtRp/TOa1fh/XVmYu7exK
+      Kkm+98a/Ueds4Nry62k7sJeCkjKc+bmEh36INqMJreMapGO/SdnuRZuW7HchK7gf243GbCTv
+      5vVIpxGGZDDM0I+epvyPP4PaoEuNFj9/AZ3dlpobAGqjnqyN9Uv/ft+4DxIeO4piv5Gp5w5Q
+      +vu3gBgjOvpLNEX34V+IMjRxhGF5gnCGkXxrCSWWSlz6QogJfPNzTLvHCbtkRr3D3NpwH28P
+      LXBzrf2USeLO0SfY/7s93H7NF1nZ2HhezYsmFF4b8JGcHmTu+GFKbyplPjnLJ0vuQgjB373w
+      l/zJlm+QZ3WedJ0QgrgsmFiIM+KL4o/K2AxxvKEOjs/sZTY4Tam9fGmZdyY4jc3gpCz7c7is
+      VmrzTGQY1Mv2jsNlNgKoVKoz9khxWeGtoQVaCq0nbWv83bHHMOssXFtxPR2HD5LjysdZ4CIy
+      /GM0lip0js0pL681/2ThF4Kp5/aCIs4o/AAaiwlLdRELR/vIaKpi/LcvY6svI3vL+QnPeZG/
+      BlNoGtTHsa+vZfzBVyn+0o0Yiu4lOPxzrLYqmle0sC52LcnBYUYGOxnR97E/S8aQlUuBuYSY
+      EqTK2siznU/yhbVfwWbQMOaNUWI/oZTe2Bydw204knlU19UzFYiTPMfWNiGgYypESZae2hUt
+      vJH0Mfh8H6U7Snl+7DHs6jwybDbCIkAkaTtpVUmSJPQaiTKHgTKHgbisMOaNIStrWJnfjEkb
+      RhGepdXEqlwT0WQ2G0tt5JgvzLLrZTUCnAlFCPYO+7Hq1ax6V8Tj4bEDPNf1O/58618z2NmN
+      3mCgsqaWqPshQGAouBtp6BWIBaD207DY0wgh8LzWSnhkiqJ7tqPSnf1lx+f9jP78BbRZVkyl
+      TrK3NX2gXum0yAlofwCRv5bZ9ihRt4fCe7YTCnlofeshdPFuqsttGBxNaA31qKcEor8frz6B
+      O1/PIc0I6zK28EzP09zeeBfZlgr2jwa4cdFUDCb8PDn8G6ZfmWD72k8RcVQRjMtYziPVS65V
+      S7ndsLQddNdzzzI7PUXNTbW8OPwcK12NaNQaIskQny77wlLE69mIJGRGvTHmI8ml/RcmnYqq
+      bONJGbo/KJeVAuwb8TPhj5/2szyLlo2ltqUhfdQ7wo/e+nf+dOtfsTDmIRaNUN/UQnzqOeSo
+      G2PJ/Ujj+8E3BPV3Lq3eCCHwHTqO90APJV+5CbXx/FYnZl48iKRWkX1t84UX/neILkD7rxE1
+      n2b6zVHisz4KP389Qi2x7+23OLLvda7fWkFx9gJKbAaNpRZtvAjVsJ8Z7yjPVs6jFQ7UspZ7
+      1tzHa/0+qrKN2C0Jnhp8gIIJPW0HZ1lz+1dBpWJDiW1ZG3EURWHnM08z7Blk0DrA7zd+HbVK
+      TbfUSrY1lw15Wy/8u1kml5UCKEJwptaqJJYELxAL8C+v/D13rL4Ha9iE1zOb8vJ63yCx0Iap
+      7GtIM10wdRRW3g3vWo8O9Iwy/dxeSr56C1rbxXPsnBHfCBz/HaLuDiZf6iM+7ydjdQXGghzm
+      ogGe/t0TlJZXsPXaq1DH+0l6D6AkfOhnC5mZjPFk2TTT3iB/d90/4Y3AwXEfAfUzVLsVJqZM
+      TBpc1DQ2s7HEthQx+25kWSYeixGNhImGw4RDQVRqNc6CIpJqmWc7nyQUC6IoCq19h6m3NOBM
+      OInFYgQiCxi2abmh+DZcplNXii4Gy1aAg3vfxGDJxFVczuxID3GhRmPKxK6J4faG0OqtNNZX
+      AR/thhhFkfn+m9+mzFFBs62ZybERGtduhHAHsekXMJV/HZV/BoZeSQm/IWPp2tDQJBOPvU7x
+      l29Cn51xlqdcZOb7oe95RP3dBN0RQv0TRN0eEr4Aik7NoYle5rO13HbHnRQVFaHEp4kM/QCt
+      /ybmprp5snQaSatFo9KgjmxEIzsxoSMUT1CZb2dDiQ21lNoRF/T7CYcCRMNhIuEwiUQcnU6P
+      wWjEaDZjNJmJx+K4J4bZ6d1FVW4NTWWp7aQalYaavHrUKjWKovDUIw8TtUQQKxJ8rvy+jzyV
+      pBCCqBymx9dB5/xRQonAcifBCtFIFFOGFrNRz1hcJteVx4w3yEQgREtzC0cPH0YWAkkIFEX5
+      8MyCdyGE4NmuJ5GQ2JC9kf7uTlavvwpig0Qnn8ZY9kdI4QCi7wVEw+dBZ4XFVaXYtJfJJ98k
+      /46taO3WS7u2cWY5lN+A1P04lpV3Yq5aB6RWrWKzPnLGGxgdHeHJ3/6WopiB1UVV2CoU4lU6
+      wqNmdvRk8St9L39bcBeqQBBhmmRPPEEkHOaqjTsAwez0NAPdnWTnOTFbbOQ48zEYjegNpy6d
+      xpIxHht/lJX5jZRGC8lVsskrONHDK4qC1zNLZWU5Lzz7HDkmBy/rnmWTfRsWU8aHLhtCCGZi
+      k3TMH6Hf040lYKGIUjJ0WctVABWbr72eeHiOY10DqFPl4EGIM8b/fBTRoB2T7Rwa288fNv8x
+      fV3HWLVmAxoxS3TsNxhLfx8pIadWfOpuRxiylkKP5VCUsQdewnnLRgyFOZdsHtOTsFchSSDa
+      fo2wV0FeA1hc6POy0Odl0dBSzYrYNex67lmeaz3M1oSGiooBPDm5rC7bgKVnmk5lhoaq1SSz
+      czjyg+9z95fuW/ruw33HsRQ7UNkMREkSVXwQ8kHo5GYIBM92PEFldjW3rfwsiXictgN7UYSC
+      syBVPXN0sJ+ZCTfFFZXsuPVWXn5xJ0VlOh7s/Qll8QoqMmvIzS/AbLFe0FeUUOL0+3vomD/C
+      gm+O7GAOLcb1+ANBunuPE4lElmkCJaK0dx9HScTIcFXgcx9HpTOhqI3kmWHCG0JrsNFYl3Io
+      fRQm0HRgin995R/4asvXmO+boL55DRZjkvDQDzEUfh6N1gntD5zw8i72OslghNFfvID96gYy
+      Gis/kpHqghILpCJPZ7tSWzWzayCnDox2WEzo1dvTzc7Hf8W9n1TjUX8OkyWToDHCY62/5a+v
+      /190th+ju+MYn/38PUiSxOz0JD97/UcEzUEy9GZEwo8Sn4N34rCEhJAllISaZEhHXZaKHY2r
+      MeRsQW2tJRqN07p/D6WV1cx7ZkkmE9Q1NqPV6VLJB555mkQiwdobNvDG9IuEZ/wUh0ux6jJw
+      FRaT43KhN5xaked8EELgjXno9LbRM9eOdkFDfrKQTE027vEJhgb6WVFXR8u69TiyHZfXJNgb
+      nicYO7UelyxkfnXwp1xXdgOaSZmKmjrsdhPhwe+iz/sEWnNNSvgLN6R6ykWUeIKxX7+EuTIf
+      xzWNl5/wvxshIOqFuV6Y7U6FYDtWQE4tmBz0vLUf/L/AvvJ+xt1Rmjdu4l9e+Qc+UXcbe554
+      nZtu/SSFxSXIisxPX/sBvvgg9xdYwR8m6VdIBnUkAgaEbAUyUemzUJvt6HOykKMRIsOHMTiH
+      MVflYK78KtGEjmOHDuDIyaW8pg6VSELEC6QKjex64UVGp31cd9MOoo4Qhz17WaGvJzeay/zM
+      LGqNhrz8AjKyHEtxhRqtDoPxzAF0C3Ev+6ZfZ3DmOI6AgyJdGfFQkr6+PoQiaFqzlvr6FRhD
+      I4jJVpRw4PJSgMfbHmLA03faz1Y5m7DPmSkqq8BZkEd44D/QZm1Am7UBqesxyCxNhS0vIhQF
+      98OvobYYcX5iI9JpVjwuW95Rhun21Mig1hG3NTPx+vOMOyJEVGtY2dTCvMbHL3b/mKr5Ku7/
+      b18HCZ7ueJwOdxt/VF1KtD2GpF6FzpGFNsuKLjsDjdmISq9Z2uexZEbGEviPDfDsPdcAACAA
+      SURBVBLseYXMplnM1X8CmpR9L0XmUdoeIuxeYDGnGBoDeKUkR0bCGItbqN98FUcD+/AnFtjq
+      2oE5aWbKPU5gwbf0tSKhENUrV+HIzTups1KETNvcIQ5NvIXdZ6dUX82Ee5KB3l4KiotZs34D
+      xc5MVBOHUNwd+IaThMJOJKP97AqQSCTwLgTIzbaf6ZTz4oIFw8ViJBOnD4c+3tFGdp6TotJi
+      IiM/Q20sQp+7IxXWrLelTJ93hThMPbMHJZEk//YtHy/hfy9CQGAC0fMUY13ZJIve4Im9eSAU
+      jBYLXeZODBlGbBkZJBWZ6EKQP938hxjHf42x9M8xOBfjd5QkJKMQD6bCvsOeVI8e9aX2OLha
+      IKuMRCDOzK5fYFvpwVz1J6iCcyTbnmJ2KBt97VqkxX0ZcW+A+HAfemkSc06YgF5H9sqtjJt0
+      vOndT7GlnA25W9CrT3iqQ4EArQf20rThKkxmC5FkmAF/D0dn95P0xCmNVzA1Osv83ByNzS2s
+      blqNJTGNmDhMdGiYhWkzSVM1GS31WFYUIalUZ1eA4/3D/PaJ5/jafXeSl7v8jM8XSgH6uzvw
+      zc+fclwCHHlOSsoriLofBFQYCu9EGngJElFYcevSRhQAz+5WQkOTFH1+Oyr9xd/J9JHQ9ms8
+      7hwU9S6Ma/6ImGyl/dB+CsrKsBflEQ4E8M55iPnCrCqdJTYZJzOvDEIzEJlP7VdW60BnTmXG
+      MNrBmJX6OxGCySMQnAZHFXF/nNjkXgy5FuQp8PpXkHPrDjTWk0OrhawQnZ7H3z5AfOg4QjuK
+      tVDBnJfPYWmBEb2W4qyVqN7lOQ4G/ISDAWy5dvrmO9F5tRRJpYSnYwwNDdGybj3rWlahmW1D
+      mTiGfzBA0J+LrqKBjJYadA7bSaPHGRXg9T2HePzZl2hqqOHaq9dTUpR/utPOi49iEiyEIDb5
+      FErcg7H4PqSxfeAfg/o7lnZmLXl593VR8tVbUBs+vntjT2HiEPGJMaaOdZJ3UzN6582EQ0Ha
+      D+4jmUhiMBqxZdnJz89AHvoRJv0WtIoXCtaByQE6y2KoiHT6zT5CQMyf8qzLCYSiMPtaOyKr
+      mpwdm8686eedyxWF6MQc3QcPMTB2iEJzkDqXnrAptRUbIKzTEi6/hmgSJgdGceoKiAWT9HR3
+      k+Wwc+P112LztRIfaGfBrSWmKsfatBLbyvIzPv+MCnC4rYuB4TE2rm2kKN95ulPOmw9bAYQQ
+      JDy7SSwcTXl5Z4/DxKHUdsZFL68QgkDnMLMvH6b4KzejtZ17X+zHisg8dD7CSJsNx6YBzNXf
+      RFJplhIWaDQpAYlOPI4cTGLyeZAa7k719MtESSSRNO8/WjMWi/Hqrp307NlPmVqPenFxPduV
+      YM26QloTtUxNzTAyNER+USEta9dRbAwg97yMp1eNyG0mc309BpfjnM8+owIkk0nUajVCiPOK
+      CT8bF0oBohNPIIcGTv1AyCBkjBV/gsrnTu3LbfxiqtdaJDwyzcSjuym69wb0uVdgKSOhwJGf
+      4pkuIRHbTWZLDYaiLyC9K6OEkgwS6vn/MJm3o475oeZTF6+5QjA9OUlvT8/SRBuhUDLVyYIx
+      SbzwalbUrMASm4CJQ/i7JwgmanDcuAV9btZ5K91ltQqkJAMgn74otaS1IwUmoPfZVHCbybH0
+      WWzGx+gvXqDwnusxFlz61Ws+NEbfIu6ZY/S1MLnXT6HNysNQeBcgIYcHiY0/jDZzDbqxIai7
+      /aQtoZcKkfFZ5P0/x1JTijw/QWAkTCDgwrL2KjKbq9/3gsZZDbM9u57g1Q431TkmNn36SxRY
+      L+72AZXGCpozeAvDHjj+DKy47SThj8/7GfvNS7g+dfWVLfwAjhVoZx4nc81Gpp6LY6s7iqTS
+      glCQw4PoXbehjipgCqSy4F2CGAtzmBvcju+V1yGjFFvLavKrCs66JfVsnFWi97X2sGXzZroO
+      vsV8IHaSAowP9eENRnEVl5NhkBgYGCI7v5RMo0TfwBCu4goyLcvcAXUmfMMpW/a9CAHje6Hq
+      Zsg4EYOSDEcZf/BVsrc0Yq66NKIPLyqmbCQkstcVYb+qnkBnP/G53ehzizFV/jkSKuj7GdR8
+      8oxZLS4F7JubkFvqUJv0H9h5eVYF2HHdZvZ19GNwVFPtfHdosMDjD7N6cctc+5HDVDc0Iiky
+      3Z3tlNWtorOtnXXrL3BqxOhCat35FCSo+gRklS0dUeJJxn/zMraGMjKbl59Z+WOFJKU8w3O9
+      qAo3kLG6BjixyZ+ZjpTPxJx3xltcCkiStPztpe/hrAqw89W9fP0v/oJXHvwhPRNBGgvfmVQK
+      jGo4evggGc4yZjxTSF0qEiozAgmLQY9e8yGkRsw+e4YCFtMeCllm8tE30Bdkk7GxbikdYhrA
+      XoOq7xmUvJaTe/l4APXQa8i1dyy9xyuBsyrA1S3VfP+730cRWra8ewSQk+SVVGJWxzjW5yEz
+      M4ea+gZaj7Si10I4niBxEVIjQmo9eer5A6h1Gpw3rj3hsk+TwpIDeiuq8begdGtKCYQCgy9C
+      8SY0tku797/QnH4VSJGZ8wWQY0GCkTiSSoUzvwjjO3sxFZnRkSECkSTllZUQCzAwPI6ruByr
+      VqFvcJi8wjKyM1Mjxke1ISa1l/co4aFJir60A5UmLfynRY5D56Op+KjiTSkv7lwv1H3uJI/5
+      lcDpFSAZ5Uj3EN0Hd+MoqEAlSbRctQXHWbKJnY2PxBMsy3jeaCcyNkPBHduuLC/vcpDjqSVj
+      jQGCUynh11/YePzLgTPk+jDQ3FCLVQuzIZncvNxLurSOUBSmdx4kNjVP0ee3p4X/fFDrUo4u
+      cy6s+OQVKfxwljmAUBRcZSvIxEAsGkP5oKXPLwDuR3cT7Bk95bgQqfXhoi9ej5Q2e84fSQX5
+      ay52Ky4qZ/QE73r4JwxHDUy7p/nGN/4UwwcYAS5mlcg0ac7GGaW62+1hy1UbMapCdB8fIBI/
+      ew76NGkuR844AvS0H2R0ypsqgCCpL/lJcJo0y+GyCoZLk+ZCc+ku7aRJ8xGwbAUILniZnp4m
+      HE3l6oyGg8QSMkKRmfPMEk9ewoml0qRZZNkK0N3Ts/S3kBMc3fMqA1ML9He1sxCOcrS1/YI0
+      ME2aD5Nlp0ZUS4LJCTcqvYXZsWHyyyoJA/64THNxEQuzsySFQPqI6wSnSXMuhBAkYhHkZHKZ
+      CqBA45qNqJQQh48N4p+dxGqEOXWSPIOEIgQKqVKcqo84GC5NmjMhhMLs6CB9h95ieqQfjVa7
+      zFUgOUZn13ESySQF5TXkZJiILkzhSVqwCj8DY9NkOlyUF6c206dXgdJcLIQQyMkEg6376T/8
+      NgiFsgwX9vkQ9s99Lr0MmubjiRAC37Sb/iN7GD9+DEdWLsUY0R8fQuNwoMl3Ic/NpRUgzccL
+      oSiMdh2l99BbRAI+Sh1FZM+FYHgE4+omLNdtQ+NygSwz9f/+bVoB0nw8EEIwNdjD4V1PYNQb
+      KdVlYeodQqXXY9m2DeOaFlT6kwtyBF9/I60A74fk3By+hx5GRKIAqKwWMu++C7XNdpFbduUi
+      EgkWnnyKyEA/k4PHMVpsZKoN6KoqsVy/HV1Z2Rk3ziuxWFoBzhclGmX2n/4F89Wb0FWUAxDt
+      7CJytJXcv/oGkvYKyTF6CSGEYOHxJ+h78Rny7rwLZ3mqkLk6Jwe1xXKOq1NcVnWCLxZCUfA9
+      8Bv0K6qxbL9u6biurAzZ58P7wG/I+tK9Z6wlnObDIXLgIO5dzxG8qok11964rBQp6V/sPAjt
+      fp3k3By2z3z6lM8y77qT5OQkwVdevQgtu3KJDw3he+hhJupLKF+3edn5gdIjwDmI9fcT2LWL
+      3G/+1SmTKABJo8Hxta8x88//DJKEaf061NbLf3uhEAIRj0MyiUgkUCIRlGAIJRBACYdQgsHU
+      v0MhVDYbpo0b0OTlfSRVdpLz88z9148x3nk7oX07Kahe+b6uF7KCMjGHCKfnAGcl6fXi+ddv
+      kfXlL6Gvqjr7uR4PgZ27iBw5irFxFeZtW9EWFZ1TIIQQKKEQsteLEgguHVcZDejKys5y5YdL
+      fHSMuR/8MJVWRpKQjEZUFjNqqxWVyYTKYkFlNqEyW0jOzhLefwC1zYZ56xZU5tPXVw5pJeKL
+      YqA3WshyFrxvhRGyzPT//Hus129nQARQkjKrr7v1vK9XAmGUvkkkmxHJbl2+AvR0tJIQalzF
+      5cS8E3gWwtgcTrJN0D8yQWZOAWWFucDlqQAimWT2W9/GtHYt5m1bz/uHUkIhwgcOEnrzTQCs
+      O27EsGoVyDLJWQ/JqSmSMzMkp2dIzEwjz3uRVBJqhwPVu0aO5NQ0prVrsN56y0deu0wIgedb
+      38a06SpMa9aARnNuRU4miXZ0EDl0GCUWe8+HMHzsILakxESWHqm5kYW5aQwWG43bbiG3pOKk
+      LNVnfIai4Pv1A2jy8zFt28LT3/t7bvjyn2LOPHcKd6EIFLcHZcqHutKFlGlOZZg755Wnvx3z
+      Pj/VtQ3YbSYShmJchRIHjx7DpxI0NLXQdvQwpYW5FzY14keEEALfQw+jdblOEn4hBASjiMUa
+      wpJaBWbDScKhMpuxbNuKeesW4n19BF99Dd8jjyJJKjQ5OahzstG6XBhbmrHm5qLOyT6taaXE
+      Yni+812EENg+eetHqgSxri5EPI5p/frznthLGg3G1asxrl59ymfDHYfxWhI03nIPjkcfJ9k7
+      TcYddzDpneLwsw+jNppo2LIDZ/kKVGfISyTicRaefArZ5yPzns/jHugiI9eFKePcqe5FOIbc
+      NwEGLZqm8pMSJyx7DlBbW0vQP0OnJ0BlvoX9Hb3UNqxmoLcDjUpChSpVKPsyjAYNv/028YFB
+      7N/4c2T5xF5o4Z7DPTjOnJKqU+ZU6citK0NynN7mV5eXk1FenrKlNZrTCpMCKKdLRahWk/kH
+      X8X7H99FqNVYdtx4Qb7buRDJJL5HH8d2x2eRFWWpkPhyiUVCHH3pKTbf+VWkzEwy7v8Ksa4u
+      Art2YfR6aQwGWfD1497biresHGfLBvQFBWhyc1FnZSH7fITfeJPYocPoqirJuP9+kkLQd+ht
+      KpuvOun3OfXLCJTJeaSpBaSSHLBbkBFLqR+Tsejy6wQPTsxi0SSYCmgITA9S09iEQadnfKAb
+      S24B7jE3a9c0IXF5mUDx4WHmfvAjcv7qG2gcJ1KEK/MBpo71M1hoIXNxjXliapZNES2mtSuW
+      ir9daORgEM+3/x0lFFosUQRqqwXztddibG5aGj2EoiDicZRwGHnWQ3J2hsRkytySPR40eXlk
+      feXLqHRn39f9jvmW/af/zykKK4RATsQJBxbwjA8z5x5mbmIEncFM0/ZPkuUsPOX8Iy8+iaRS
+      0bT9tlNGMbGoYPLCQsosnJlh7lgbnvYj6OMyNpMNjdFEsraSSZPElGcSIRQQoDUYuPErf4bm
+      DN9HxBLIvW5Qq1Imj+6En0YIQczvZf/RfcufAwR8c/gjMi5nDp4pN5G4jMFkI9dhZXJyCnuu
+      C4M2JfSXiwLIgQCz/+efyPzCPRjq6paOi2icwNF++hw6Wqorl457QiE6D7RzdWkZ6rIPVkbq
+      bAhZRgmHl/6dnJomsHMnCfcEuvIylFAY2TMLAlCpUGc70OTmonU60TjzUGdlEXj+BSSjkcy7
+      7zqjOSVkmem/+5/Y7/89dKWlKIpCxO9jbnKUOfcIc+4Rgl4PGq0ee34xuSWVOAqK8XtmOPrS
+      kxTXNdGw9Wa0upRSeqfcvPHIj9nx1W+gN55fSSohBPMToxx74wUWpiYwWKzEY1EqW66iuLYJ
+      9aLDUa3VLT3nvdeLWT/y6AzqwmykvMyl76vIScLzM0wO93F0bo4p6znKpF4oLgcFEMkknu9+
+      D31NDbabbzpxXFaItw3SpUmgz8jmF8+3Eo0nyZDnadS7ES1XsTluIa+lBukCpew+r/YKgez1
+      ER8cQG2zocnJRTIakXTa05tasRieb30b8+bNmDdffcq9lFCIhYcfAUki68v34Z33svtX30Gn
+      15PlLMRRUEJ2QQm2bCdanf6UZ8SjEdpefYaRziOoNaleORmPsu7Wuympa1rW9/N7pklEI9jz
+      i1CpT2+ti6SMfNyNCMfeuRDJoEVdmY9k0qfeUzyGd2yAAfcoxyJR/AYLDQXFbC4tTyvAOyw8
+      /gTJmRnsf/D7Sz+uEAK5181gcAFdYT7/9uBevrK9Gk/ba0S9U+QUleGNxfBklXFXbhnaVaWX
+      dLX55LyX2X/6Z+x/+Afoy1NLrEKWiRw6jO+RR7Fs24rl+u1IOh2PPfwYRaYEGz75+ff3jEQc
+      OZmaI0mSCp3hzJXdPyhCCOSecSSjDtW7q/9oVCAE0YV5poZ76Z6ZokeosTlyWVtYTH2uE82i
+      PKYdYUCktZVIWxu5f/WXJwm/MjnPjNeHsbKQ7zx8gFsaMhl79QEqmjZSe+d9yIkEz/zgfyOK
+      qumZn6XuuBYlP4u9c5NM+BdY7SpkRU4uqvcoRTyZxBeNMBcOMx8JMxcOMRcO4Y/FUBYnnWad
+      js/VNZBluXBONY09C/tX72fuu987EbskBBpnHjl/9j/Q5rsA6Bufo/dYOxvvveP9P0OrQ6P9
+      aHKzKuNzIASq4tyl2mBKMoFvdIDR8RHaAkFmtAaqiqq4o6CIfFvGKb/FFT8CJNxuPP/+H+T8
+      5V+gyclZOq74QgS7honXFPKdJw7TkKtCN/AK19xxP/b84qWevn33c4zNzzHsLOOGTBeamQUk
+      SSKaY+VodIHxkJ/6XCfhRAJfJEIoHiOhKGToDTjMZhxGE3aTGYfJhM1gQL040e3zzPJGXzf3
+      tazHYj6/wK7zQQiBSCQgkeqlUamQDCeWcmVF4R9/+Tp5w8/y5W/+AzrDhSknK8IxRCKJZDN9
+      4FFSCIHwBlGGplE3liFp1AhFwT89Tkd3G4fjMiqbnTVFJTS5CtCpz1yq9YoeAZRQiLn/+jGZ
+      X7jnJOEX0QTJ3nGUynx+8WInxVYFbf8rbPjUvTgKSk66R836bfT98B8xO0t4NTjDDauqkbs6
+      kQ9185mqZgJZdkYkGbPNRmaeEatej+lMPaQMqZksNDhymQz6eezwXu5ZuwnteU4iz4UkSUg6
+      HZxh9eTY4AzzU25aXLlnFX6hKEQW5vBPjSMkibzKlag0Z7bTYx3DBEIBTFYjU8lZVDotuSWV
+      mOy5798bvBBGHpxCU1uEpFETD/kZ6mnnjdlZlKxcPtG4gjK7HdV5ONeuWAUQssz8z3+BqaUF
+      Q+OqpeOKLCMfH4PCbJ48PIISDZLtfYu1N9+JazHc9t1oDUbKGtZAxM/KzTfS/uozeMYGMZit
+      eEfeZsOm28icD0I4DqRyKC2tXAtQhEw8HMY/N3PSfS3mTK5dXc3DwSA7D77N9lVNGDLOXfj5
+      gyArCg+/2snVRVDgqj3lc6EoRP1e/FNjjExP0BeO4tbokARs986zsmkj2vfY/EoyQaJnjDcC
+      swwaBS1CS1Xczt7APGOeI5TaTDjKqzFlOxeL0J/5+wkhIBRFGZhEvaIAyWwgEQ3z+sG3aFXU
+      bKlvprmgCM37iMq9Ik0gIQSBZ54lPjSM4+tfWyqjpCgKCz0jWLV6np8OsOdIN+tEGy3bb6Wk
+      vvmM9wsteNn1k3/Dlp2HwWJj4233APDmIz/FYLGy7hN3oVKnhuloOMjCzCRzEyN4xodZmJ1C
+      Tiawu4rIchYuZdHwDg+xunAt2uYV/FfHIbL9c6zKyqKosAyr68yrIh+EA91uXm8dpil+iNXb
+      P0V2QUmqzQEv/ik3o9NueoNhJrV6HPYcGvLyqXXkMBMK8HhHK00k2NDQgs60WBkoEWehq5t4
+      zIB/hYt6Z2qOIaJxlBkfIhTD7/OTiEQxm4wYTEYkox6MOiSDDsmog3f5V4Q/jDw8g2ZVKZJB
+      l/IzHNnLnmice1s2kGF4/6twV6QCRI4dY+HBh8n55l8uRW4KIZgZcpPlj7NfqHh8dxsb5MM0
+      XXMd1WuvOWfP27XnFRCCmo3bltz5ciLB7of+7+JKiMScexiVWoPVnk12YRmOghIy8wowmCxL
+      gv8O3qlxDj34S6656jMkGkppnZnkwOgwhtACGzJtNK7ZjPoCTzb/+bdvs2Wli6nXfskn/vCb
+      +N3DjE6M0hMMMoYaa6aD1fZcaowZ2BICEYwgoqm5hM+g4jHPCJb4AlmLr0qFmquMpRgaK9Db
+      zKd9h7Fkkq6pSQ4MD2EIBmmRJAqz8rDYciCWXPJEJ2NRknIM0+o6VIvLzbPjQ/yiq5M71m2i
+      JPPcIRGnY9kKEA2HiCWSGExmtCoIhqNYLGYkBMFgEKPJgmZRey8lBUjOzjL7z/+K44//CF3J
+      CXve7Z4ic8zLYKaNH/xuP5s1HbRs2syK9ecXCPfOa3zvuclEnMHWfZgzHTjyi9EZzajOY4gW
+      QrDniV9il2xUrViDujofRQgG5+d4uquNLQYNTWuuRn0aZ9ByCIRjfONHL/NXt5TSt+9lnA1r
+      eHtmHpXKQKXWTL0pkyzUSFoNktW49B9GPSgKyswC8sQc4wE/UZEy8jJUGlzVJUgu+znfoawo
+      dM1M8fpgPyr/PGtMBqpKq9CZLMyMDdI1PYlHQFNmBrWrN6IoMg/ufZ3S8hq2lFUs2zRctgLs
+      3/sWzvwi7DlOhrpbMdoyiMg6zEqAhNaMPxBmXXPKtr5UFECJRpn9l3/DeuMNmNavWzo+OT+P
+      tnMcf46Dbz17iMb4YTZu2kjDlpvOcrcPn6DXw0s//w437fg9NJGUUEVCAUKJJN1KmGx1mAyX
+      i9ziCgzmD7ZcuqdjjAPdbq62upmYGmfOtYLP2YoxZFqRMkxIZiOSSYekPbPpJYSASBzeqSak
+      kpBM709BZUWhe3aa1wf7UHxzZKAwqTNR7SygMCOTtwb7aJAjaHQGjmuM3L92I+oPsBNv+akR
+      Ae/8PFZ7LnFJw6qqGg4fOoJPpdBcV0nr4SOXVmpEIVj49W/QVFaga25aqh08FwoR7RqFrCy+
+      91I7lcHDNK6tp+aq6y56fWGDNZP8FQ30THZQe9V2eve/Rv+RvZTWtdBcUEtiLvT/t3fuwXFV
+      9x3/3Ltv7UPal95P27Lk9wN7CCY0QMIjJCZ1W0hCagyhk07LTJm2IZP0z7Z/dDJppp2kaRIm
+      4BZwytS0JWBoDakbiImNZFuyZD1Xr93Vc1e7q30/7t7bP9YIOxhjpLUsa+/nH0l7795z7tX5
+      nnPP75zzPcR6vfh7x3A2tmCrrgVdoZZWRBG0Ioqm8BON+JG7vysKnOzx8umtdUyc/jVDVS08
+      ZHBjaK2DCjMK78em+Pg9hPW/VdEt4Rm2O9202p145oMkczl+1+Wm7GLUqs3p4t97upiNRXns
+      ls0osoy0jAl7SxOAArtuvb1gjXh+HEGhsNesACIFa0RllVkjxt58C3khguvxQwgXw3XRdJrJ
+      CyO02hz8zdv9uGZPcfttW9j7+YdWzfreHXd9gdd++Lf4+rtw1DZy/zeexmQpuFBMhEO825ci
+      m8pgjgQx+8ewZdJYpTxWkxmnuxaj0YJG1CHotWi2Nl1xD7VMVsI7u4C1TcdAZRMHNmynWdKh
+      dZWv9O0uogW21NR+6HObVsvX995GWpIwFcGIYGmvQFKG3v5BpFyOmpY2pMgUs+EYVQ0bKJNj
+      jE3NYbVX09pcuIEb/QqUGRgkdPhfqPyrby9amKRzOU539XKLUsYP+qZJDpzg3j3N7DtwEM11
+      iLAshylPHxqt/uLCkctr8Vw+TyyTZjK6gG8hgn8hwlxwjvxCCFs2Rb3JRJPTyXq9m3JXA5r2
+      +g9d4/zILMeOv42xWccmi4XPmVvQtNYW3vHXOGs+CiQFgwT+7rs4n/yTxSWGkixzoqeXvTGR
+      n/sXmOj6Jfdtc3PHw0+s2DD+9UJRFGRFIZxK4luIFIQRCZOdn+WgrZHypmY0je7LvnPsfzsZ
+      T3rJRwIcuuVuzIKpEGdfxfOaisXqquqKjJLLMf/jn2Ld/8XFwi8rCu94hmkN5fjv+RwjXb/i
+      vk0V3PHwH6FdA94+giCgEQRcZgsus4VdtYU5+i+e6+TYQDcH0FFmNiLYC+t2pUyanDxLLBHl
+      kVtuoywBmi3ukij8sIZbAEWWibx4BCWfx/7oQQRRRFEUOv1eNMPTzEdFjnf8H3c2KNzz2J9d
+      11mLq4FQKsk/nzjO1tF+7t29H61GhyzlSOfzZLMZTHojBr0esdqBprnyRmd3xViTLYCiKCTf
+      fZec14v76W8uFv6BwBzzwz5ccQOvd/6au2pzfPbRp9Z84QdwmMr49KatnJrxoul6BXt1PX5Z
+      YVDUs08n8tm7H141Hf+VZE0KIOf1Ev3Fa7i/9c3CxC9gJh6jq2+QHQkjhztPcUdlnHsOPYWx
+      rHgzLVc7+xpb6Nq4He3sOD2ZLDS3c6iulrqahpIs/LAGBZCPRAj95Kc4nvg6WldhkUQ4leTY
+      uS7uyZRxuKuTPbZZ7vnDpxbDiaWCTqNh/+ZtPJeIs722ngNbtqH9CBeGUmFN9QGUXI7gP/4A
+      484dWC96eKZzOV4828Fn4jre7B7Alutn/xNPYXNVXff8rEYURWEuEcdddm1TMtY6a+YJvO8U
+      LNpsWO6+CygMq7/c283mGHjGfZiT3Tzw2JMlW/ihECWqsljVwn+RNfMUUh0dZPr7sR8qRHxk
+      ReGNoX5MwTjm+Shzkyf5/KEnsVfV3eisqqwilt4HUBR6us/Q0r6TeNDH3PwC7roWbLocw2M+
+      HFWNNNY4P/46n4DEyZPkpmc+fCCfJ9nRQeW3nkY0FJwATnnHmZmc5YtZDSc8J7j34DdwN9w4
+      r02V1cmSBRCamWA+mqA6m8c3FWT3Lbs4c+48OiHP1l176D57hoYaZ1GtETUOZ8Fl7Qq4//Iv
+      0Fxc1tg3N0Pn6CiPCOX8pu8V7njoIFXNG4uYE5W1wpIEoOQzjM/Gaa4pmJKatHm6zp3DZKsk
+      Gw+gEwU0goikKIhFnA2qbd2AtnXDRx7P5/NMRhd4Y6CPr2md9Ha9xebPknpKywAACfZJREFU
+      fYHqde1Xt9BTKVmWJAApm0GDhGfEhzNvI5XKsXPnFrp6BrCbRAKRBbKyglYQFpcbrkQUKJxK
+      8p99vfyeqYq5/jPU376PdTtvLZlhfZVPzrLCoOlkHFFfhpyJ4ZsK0tDcjEGUmZjwUlXfjEm/
+      ctaIaSnHs52nud1gxz42QarOTNutn7muaarc/NxU4wAZSSJ90XXsUmRF4dWBCzRpTGyfiRG0
+      ZGjdd+ey01NZ+9xUI8G/HBliLBS64rG2Cgd7wzJhp44Nuz+1wjlTuVm5qVoARcp/sN70sgMK
+      0tAk0VwU+86t6iCPyjVzUwkg75lGiSSucERBthnRrq/9kL2IisrVuKkEoKJSbNR3BZWSRhWA
+      SkmjCkClpFmGABQkKVfwalcUspkMeVle/F2+0UZYKirXwJLHAfK5NG8cO8an7t5PdGqIjKLD
+      4a4mHfQRlUQyOYW9uz7ZFvYqKivNkgXgGRxkXWsrABM+P+7KGtLZHPPJDLt371l91ogqKldg
+      SQLIxoOM+IPoSZHVVGCtcLF1+w7OdJxB1AqF1yIURFh0ZFDDoCqrkWWNA0z7RjA6GkgFvcyG
+      45htLpymPOMz81hsbtrWNwDqOIDK6kUdCFMpadQwqEpJowpApaRRBaBS0qgCUClpVAGolDSq
+      AFRKGlUAKiWNKgCVkmbpAlAU+nu7SWQK22D6R/qYiSRJxUKc7+5mKhApVh5VVK4bSxbAwpyP
+      6WCIZCZPJhFmamqKcCzN4NAIbVu2MjnhQZ3+prLaWaI1YpaR6QXW1RU2oBj2jNG6oYUZCfKC
+      gEGrQXsdrBFVVIrN0qwRMymQJTwjfpz5MkRJweMZYV5TTUMZLCRTZPPyilsjqqh8UpY1GS4Z
+      j6IxWjBoRaRMgpSsw6wHz/AIdS2tmA0FfamT4VRWK+psUJWSRg2DqpQ0qgBUShpVAColzYq5
+      Q0uShKIoi8a1six/7O/vW65cy3nA4kYY13Ltaz1PlmUEQUAQhI/Nz7Wet5x7WC33+kn/R8vN
+      z6XHipm3FekE30hWQwdczcONT/+j8rDmBaCicjXUPoBKSbNmBDA5PkT3+R7G/ZfvIzw0MHTZ
+      34n5KTrPnWfQM4FcpLTDs17OdJ1ncNT7obQvbV5lKcuFs6cIpwAly9nT79HT209GWv4Olr6x
+      YXp6ehj3z17yqcLQwPBl50WC03SfP0//8DjZVJTOjk56+4eL9iy6O0+TkGRAoeOdk6Svcu64
+      p5+enh7eO9ez7HSVvERnRweSAvlMglOnz171nqKhWbovDN5cWyRdjXgqw+Yt29BpYHJ8mLlw
+      nLrmVkJzk3Sn41RUNdFU42TKP0t1QxPuclvR1J9MJmhp3YzDrGVucpzJuTCVdc1EQ3P0dCcp
+      q6hiQ1MNuWwWV7mReA6suQAZg522dQ3otct/N44k02zbtg0A78gg89EEjevbCc74SKWiOOvW
+      U19ZgdFiZ/u2Kjo7OogaM+grqlnfWFnEmjDN+Ng0610C04E47fksY4ODpDIK29oa6Rn2UmZ1
+      0r6ujuYNm8jGA/R548tOVVHyJKLzBMIJhKifSDyNlE0yOOAhrzGwodaOZ3wSR00TjdUOFI0R
+      jZJdOy2AlI7T29uDdyqAZ3QUq8WIZ2gEq72SHTt3EZrxAVC/fh1KKs7ZM2fI5YvT/VGkLAN9
+      vXjG/Qx7RrBYzYwMD2Oy2tm2Ywex0CwKYCizYNQVCrtoctHoMjHc10Vg4Wr15LUhZxL09PTg
+      nQ4wMjaG1WxgaGiUcmcVO3btJjA5DoBBJ9LV+R7u+vXY3PU4jAo9ZzpISMvOAgCiyYGSCTM5
+      F6GhxoGigCgIJCMzhKJJYpKetnV1i+cPDk/Q1tpUlLSd1bXMz04zH89RWW5AkRUEUcDn95NL
+      xxDMbhqqC3tbl5eXIwg32SZ5V0NrtLBxY6EFmPPZsJU7MdtE5iZ9RMMB0JkAiEZjlNsdTE9N
+      Fy1tQaunfXMrDrOWxPwUVmsFJnM54Zlp4tEweeHinChJIp3NkkmnSeRjaE0WzAZdUZy0RYOZ
+      bVsKLcDMhA1bhQuLXcusz8fC/Ayi3gLAha6zVK/bhN1sJB4LUWarQC/6ijp1vcIo4I2CQyeS
+      CM+R15dTYQ2jKAoOp5P3d23OJcNIWhtGXXHqYUFjhNwCaO0IZAhNjlHmqqdsPgKCFqe9YjHt
+      bCZNNptdO1GgZDKB0WRGFCCXTuCdnKWmvoFsPEQ4lqWxsR6NKCBLGSa8fpzV9djKDEVJO5NO
+      IupM6DQC+Vwar3cSV209ZOIEwjHqGxvRa0SS0RCTs/MgiDQ0NhGem0Q0llPp+uAfs1QSiQRm
+      sxmAbCqObypAXUMDyYUgC0mJpsY6REEgFJhmPhJH1Blpaahh0ufFbK/CUW5e/oO4mA+jQUM8
+      paBDwmAxM+v3YbSUYzGbyMkiZqOukM90ElnUY9Qvvx5WFJlkKoNGzqLoreQzCcrMJvxeP+YK
+      B+VlevKCDsPFFnjKO0oik187AlBRWQprpg+gorIUVAGolDSqAFRKGlUAKkUnHJjGMzJCLJn5
+      RN/zDXfz6lsnAZifm8IzMko8lf2ts2SiiStcN5/jpSMvMDDqJxoOMu6dRFYUMqk44xN+ChFv
+      hflgEJnCoOT42NjaCYOqrB6OvXSYnKOFiaEjPPn0t0lODRPOammtdxDN6qgw5IhKRqocFgKT
+      Y0wtSLQ1uvjRTw5z55ceAeCV559DV78OT98R/vw73yE80U9UNtJSZeCZoyf5yoH7EZMBFiQj
+      7esbQJFR9BbaW2w888MjaDQJqrffy/h7r2K0Wimr20uN4OPomz187/t/zasv/oyUxqK2ACrF
+      R2ew8ODvf4Wv3bebMz3D9PUN8ObLzzPgD/DyK6/zmxNvEpMgFfHzs+f/i8HT/8PxDg/oDLgd
+      5YVr6Cv40pe/ykN3bebshTF6+wd5/aXDDEzFUBSFRHCUF44e58Qvfs7w7KUjyVYOPv5lNKIW
+      d4UWXUUzjz/xp4QmzvE79/8BO1qqAcjmsog6oyoAleuDouTpHxqj3JhnJi7TUltJVmvHLgfp
+      C0g0uy1kk1Gcje3cfusO4imZ2oYGdm/Z+MFFZIn+4Qks+jShpEhzjQtNmZ3m1i1U6GUyskDL
+      +jYEOXdJwlmefeZZbnvgq+ze2Eg8GiIemSYvWhfXFQA8+PBB9mxrVwWgUnyqa1088w/fQ6nd
+      zd5NLcgLfmKiFZfNyG07N2CtaUUrgK16I/WGIEd/NcQDd+5m48VdRwFqG8r5p+9+H9OGfeza
+      0EAmNEZab8dhsRAZfBtvuoLNtQYujE5hMX0woJmPBwnEkvzHkWd5p3ucO/e08uPnjrL/wIO8
+      9m/PMBUK8NxzRxkb6uaVY8fVgTCVFSQV4u9/9K88+sdP4rboinvtfJbnX3iRvXfcQ/u6+mv+
+      mioAlZLm/wGeJwhhZOCKigAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

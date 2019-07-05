@@ -1,0 +1,92 @@
+to-ask:
+    - endgoal: for the excel file to be entirely user-friendly? (ie, who is reading the excel file)
+	- make new employees / interns learn excel?
+	- how are the other interns helping
+    - need to chart the raw prices?
+
+    *** CURRENT MANUAL WORK (STEP BY STEP SO FAR + END RESULT)
+	> what data of prices of (ports/cities/etc?) obtained from data company
+	> whether format of raw data consistent
+	> how often completely new data is added (new ports / new products in ports)
+	> what happens to the old data
+	> the column manipulations done
+	    >> manually copied and pasted chosen columns into new worksheet for calculations & analysis?
+	> what happens to the results? (what does the report consist?)
+	    >> tools & their usefulness thus far (tableau?)
+
+    * how new data is received > affects how easily able to refresh warehosue
+	- able to simply add or reference raw data from master data to update the pivot tables
+
+    * google sheets vs excel
+	- google sheets : no unpivot unless manual/macro
+	- so far no need vba (maybe macro to unpivot all the data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[GOAL]
+selection process:
+    a. benchmark
+        i. port
+	ii. column
+    b. up to x5
+	i. port
+	ii. column
+    c. function
+	i. all [b] vs [a]
+    d. time frame
+    
+results:
+    a. calculated columns of [b] vs [a]
+	i. either in new excel sheet / file
+	ii. to be removed after analysis is completed?
+    b. charting [b] vs [a]
+	i. excel
+	ii. export to tableau as calculated dataframe and combine to one chart
+
+
+[FAILURES]
+
+tried options
+1. leave the sheets as they are (tbl)
+    - unable to set worksheet as parameter to select the column from said worksheet (???)
+    - reason being graph is created after selecting the sheets
+    - thus comparison can only be within one sheet
+
+2. combine and merge all sheets into one dataset (tbl)
+    - problems : * need to get sheet with the most rows (most dates) to be referenced upon
+                 * can't just merge with pandas / tableau onto the first sheet
+                 * (1st sheet, huanghua only has 321 dates compared to rizhao 3000+ dates)
+    + allows selection from all ports
+    - don't think the parameters can be dyanamic
+    - to set few extra graphs to be plotted against the benchmark + the selected function = wtf?
+
+3. excel/sheets + vba/gas to do dynamic inputs (back to square one)
+
+
+testings so far:
+    - 1. and 2.
+    - python pandas
+	* removed useless rows
+	* translate headers
+	* tried merging all worksheets
+	    > ended up with problem in 2.
+	* tried transposing the merged worksheet to add [port] filter
+	    > can't figure out how to add additional filters to filter by ports
+	    > tableau doesn't accept multiple headers
+
+    - thinking of data warehouse and outputs being different excel files
+    - output file includes pivot tables and charts reading the data warehouse
