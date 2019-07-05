@@ -1,5 +1,5 @@
 # DATA SCIENCE
-_Mainly a backup for the work done during my internship at Tivlon_\
+_Mainly a backup for the work done during my internship at Tivlon_
 
 ---
 
