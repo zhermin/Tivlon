@@ -1,0 +1,50 @@
+﻿1) PBF  : 61.5% PB fen / 61.5%PB粉
+2) SSF  : 56.5% chao te fen / 56.5%超特粉
+3) JMBF : 61% jin bu ba fen / 61%金布巴粉
+-4) MACF : 61% mai ke fen / 61%麦克粉
+5) NF   : 62.5% niu man fen / 62.5%纽曼粉
+6) YF   : 57% yang di fen / 57%杨迪粉
+7) BRBF : 62.5% ba hun BRBF / 62.5%巴混（BRBF）
+8) IOCJ : 65% ka la jia si fen / 65%卡拉加斯粉
+9) NBL  : 63%纽曼块
+10) PBL : 62.5%PB块
+11) CONC : 65%乌克兰/俄罗斯造球精粉 (find other conc in other ports)
+12) PELLETS : 65%乌克兰/俄罗斯球团矿
+
+TJ, RZ, QD, CFD, JINGTANG
+
+
+
+
+
+
+
+
+([Price]-30)/1.13/(1-[PBF Moisture])/[USD/CNY]
+
+moisture=IFERROR(VLOOKUP([@product],inputs!$C:$D,2,FALSE),"0.08")
+usdcny=IFERROR(VLOOKUP([@date],usdcny!A:B,2,FALSE),"")
+price (usd)=IFERROR(ROUND(([@price]-30)/1.13/[@usdcny]/(1-[@moisture]),2),"")
+
+
+
+
+Bayuquan
+Beilun
+Caofeidian
+Dalian
+Fangcheng
+Huanghua
+Jiangyin
+Jingtang
+Lanqiao
+Lanshan
+Lianyun
+Luojing
+Nantong
+Qingdao
+Rizhao
+Taicang
+Tianjin
+Zhanjiang
+Zhenjiang

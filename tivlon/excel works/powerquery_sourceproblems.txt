@@ -1,0 +1,33 @@
+https://drive.google.com/open?id=1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo
+
+https://docs.google.com/spreadsheets/d/id=1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo/export?format=xlsx&id=id=1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo
+
+https://docs.google.com/spreadsheets/d/1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo/export?format=xlsx&id=1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo
+
+https://drive.google.com/file/d/1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo/view?usp=sharing
+
+https://drive.google.com/file/d/1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo/export?format=xlsx
+
+https://docs.google.com/spreadsheets/d/1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo/export?format=xlsx
+
+https://drive.google.com/file/d/1
+/view?usp=sharing
+
+https://doc-08-8o-docs.googleusercontent.com/docs/securesc/6279rtpemgghlfvq5j3o7ilblsmnm3dd/6s1eftcan9dk222jtqrqh758q1f7ccm2/1558771200000/07651249275800127760/05937451928393783963/1MXGrGmeSYQuI1DD1v93pAltgJEyNtIwo?e=download&nonce=431moufojvoik&user=05937451928393783963&hash=043gsjhgv9bh2h8vifv3qdvv2uk52gpm
+
+
+
+
+
+
+
+
+=LEFT(CELL("filename",A1), FIND("[",CELL("filename",A1)) -1)
+
+Source = Excel.Workbook(File.Contents(GetFilePath("FilePath")&GetPortsFile("PortsFile")), null, true),
+
+Source = Excel.Workbook(File.Contents(GetFilePath("FilePath")&GetPlattsFile("PlattsFile")), null, true),
+
+= (FilePath) => Excel.CurrentWorkbook(){[Name=FilePath]}[Content]{0}[Column1]
+= (PortsFile) => Excel.CurrentWorkbook(){[Name=PortsFile]}[Content]{0}[Column1]
+= (PlattsFile) => Excel.CurrentWorkbook(){[Name=PlattsFile]}[Content]{0}[Column1]
