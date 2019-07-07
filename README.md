@@ -4,10 +4,10 @@ _Mainly a backup for the work done during my internship at Tivlon_
 ---
 
 ## Technologies Used
-* Excel
+* Excel + Power Query (Previously)
 * Tableau
 * Python
-    * Jupyter Lab
+    * Jupyter Lab : https://nbviewer.jupyter.org/github/zhermin/data-science/blob/master/tivlon/futures/futures.ipynb
 
 ---
 
