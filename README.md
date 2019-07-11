@@ -7,7 +7,9 @@ _Mainly a backup for the work done during my internship at Tivlon_
 * Excel + Power Query (Previously)
 * Tableau
 * Python
-    * Jupyter Lab : https://nbviewer.jupyter.org/github/zhermin/data-science/blob/master/tivlon/futures/futures.ipynb
+    * Jupyter Lab : View notebook [Here](https://nbviewer.jupyter.org/github/zhermin/data-science/blob/master/tivlon/futures/futures.ipynb "Jupyter Notebook on Iron Ore Futures")
+
+_Add "?flush_cache=true" to the end of the notebook url if unable to view changes_
 
 ---
 
