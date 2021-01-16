@@ -64,13 +64,13 @@ print(f"merging all sheets in ports file... ({round((time.time() - starttime), 2
 merged = reduce(lambda left, right: pd.merge(left, right, on="指标名称", how="left"), all_ports_dfs)
 
 print(f"updating timeframe file... ({round((time.time() - starttime), 2)}s)")
-pfm_ldr_timeframes = [-4,-9,-14,-19,-24,-29,-39,-49,-59]
+pfm_ldr_timeframes = [-4,-9,-14,-19,-24,-29,-39,-49,-59] # pfd_ldr = performance leaders
 std_dev_timeframes = [5,10,15,20,25,30,40,50,60]
 all_pfm_ldrs = []
 all_std_dev = []
 
 for i in range(len(pfm_ldr_timeframes)):
-    all_pfm_ldrs.append(merged.select_dtypes(include=['number']).diff(pfm_ldr_timeframes[i]).head(1))
+    all_pfm_ldrs.append(merged.select_dtypes(include=['number']).diff(periods=pfm_ldr_timeframes[i]).head(1)) # added "periods=" for clarity
     all_std_dev.append((merged.drop("指标名称", axis=1).iloc[[0]] - merged.head(std_dev_timeframes[i]).mean().to_frame().transpose()) / merged.head(std_dev_timeframes[i]).std().to_frame().transpose())
 
 pfm_ldr_df = pd.concat(all_pfm_ldrs)
