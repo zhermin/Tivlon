@@ -5,7 +5,7 @@ _A backup for the work done during my internship at Tivlon and some learning res
 
 ## Most Recent Technologies Used during Tivlon (~2020)
 * Python
-    * Jupyter: Current Notebook [Here](https://nbviewer.jupyter.org/github/zhermin/data-science/blob/master/tivlon/futures/futures.ipynb "Current Jupyter Notebook on Iron Ore Futures")
+    * Jupyter: Current Notebook [Here](https://nbviewer.jupyter.org/github/zhermin/data-science/blob/master/tivlon/WAREHOUSE%20NEW/cleandata.ipynb "Current Jupyter Notebook on Iron Ore Futures")
     * Pandas - For data cleaning and exporting to CSV files
     * Numpy - For certain cell operations
     * Dask - For huge datasets that pandas cannot handle
