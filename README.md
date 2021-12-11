@@ -1,7 +1,13 @@
-# DATA SCIENCE
-_A backup for the work done during my internship at Tivlon and some learning resources_
+# Tivlon Internship (2019-2020)
+_A backup for the work done during my internship at Tivlon_
 
 ---
+
+## Description
+
+My work as a Data Scientist/Engineer starts from the large raw excel files I receive. They contain historical prices of commodities such as Iron Ores from ports in China. My job was to clean and restructure the data into a format that Business Intelligence (BI) tools such as Tableau and Power BI can read. This means that the data have to be unpivoted from a 2D format to a 1D format. 
+
+Once the data have been wrangled using the ELT pipeline I built using Python's data manipulation libraries, the output is saved back into CSV format for the BI tools to read and be easily updated. Building the dashboards then entails organising the theming, selected data to be displayed and some ad-hoc code using the BI tools' proprietary language such as DAX for Power BI. Power BI also allows sharing of the dashboards online which you can access through the link below. 
 
 ## Most Recent Technologies Used during Tivlon (~2020)
 [View Tivlon's Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmFkM2I4YTAtNTVhMS00OTVjLTkzODItMWJlODI0N2MyNzZhIiwidCI6IjVjMGI1NTc0LTQ1NzUtNGE3Ni04OTdkLWZiNDczZDA0MGZkZiIsImMiOjEwfQ%3D%3D&pageName=ReportSection40f0aac501bb4eddea58 "Tivlon Power BI Dashboard")
